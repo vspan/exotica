@@ -1,0 +1,523 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>EXOTica overview &mdash; EXOTica 5.0-beta1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="EXOTica 5.0-beta1 documentation" href="index.html"/>
+        <link rel="next" title="Joint position" href="task_maps/joint_pose.html"/>
+        <link rel="prev" title="Installing EXOTica" href="installation.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> EXOTica
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing EXOTica</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EXOTica overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#system-overview">System overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#system-model">System model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#planning-scene">Planning scene</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-definition">Problem definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#task-maps">Task maps</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="task_maps/joint_pose.html">Joint position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="task_maps/joint_limits.html">Joint limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="task_maps/eff_frame.html">End-effector frame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="task_maps/eff_position.html">End-effector position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="task_maps/eff_orientation.html">End-effector orientation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="task_maps/eff_distance.html">End-effector distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="task_maps/com.html">Center of mass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="task_maps/sphere_collision.html">Sphere sollision</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#planning-problems">Planning problems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="problems/unconstrained_end_pose_problem.html">Unconstrained end-pose problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="problems/unconstrained_time_indexed_problem.html">Unconstrained time-indexed problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="problems/sampling_problem.html">Sampling problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#motion-solvers">Motion solvers</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart_python.html">Quickstart: Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart_cpp.html">Quickstart: C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_exotica_cpp.html">Solving planning problems in c++</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="own_robot.html">Creating a planner package for your own robot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initialization.html">Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_initialization.html">Manual Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="XML.html">XML Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="XML-Parsing.html">XML Parsing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Common-Initialization-Step.html">Common Initialization Step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Setting-up-ROSlaunch.html">Setting up ROSlaunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Setting-up-problems-and-solvers.html">Setting up Problems and Solvers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced/task_space_vector.html">Task space vector handling</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Task_maps.html">Task Maps</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Code-Formatting.html">Code Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Styleguide-and-Naming-Convention.html">Code Styleguide and Naming Convention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Python-API.html">Python Bindings</a></li>
+<li class="toctree-l1"><a class="reference external" href="./doxygen_cpp/index.html#http://">Doxygen C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Documentation.html">Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EXOTica</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>EXOTica overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="exotica-overview">
+<span id="overview"></span><h1>EXOTica overview<a class="headerlink" href="#exotica-overview" title="Permalink to this headline">¶</a></h1>
+<p>The Extensible Optimization Toolset (EXOTica) is a framework of software tools designed for development and evaluation of motion synthesis algorithms within ROS. We will describe how to rapidly prototype new motion solvers that exploit a common problem definition and structure which facilitates benchmarking through modularity and encapsulation.
+We will refer to several core concepts in robotics and motion planning throughout this chapter. These topics are well presented in robotics textbooks such as <a class="reference external" href="https://books.google.co.uk/books?id=Xpgi5gSuBxsC">Springer Handbook of Robotics</a> and <a class="reference external" href="http://planning.cs.uiuc.edu/">Planning Algorithms</a>. This background material will help you to understand the area of research that motivated development of EXOTica.</p>
+<p>Our motivation to begin this work stems from the need to either implement new tools or to rely on existing software often designed for solving a problem other than the one we intended to study. The need to implement and test new ideas rapidly led us to the specification of a library that is modular and generic while providing useful tools for motion  planning. A guiding principle hereby is to remove implementation-specific bias when prototyping and comparing algorithms, and hitherto create a library of solvers and problem formulations.</p>
+<a class="reference internal image-reference" href="_images/example.png"><img alt="_images/example.png" class="align-right" src="_images/example.png" style="width: 30%;" /></a>
+<p>In this chapter, we will use a well-known algorithm as an example in order to explain how to use and extend the core components of EXOTica to explore novel formulations.
+Consider a robot arm mounted to a workbench (see picture). The arm consists of several revolute joints actuated by servo motors moving the links of the robot body. A gripper may be attached to the final link. The task is to compute a single configuration of the robot arm which will place the gripper at a desired grasping position - i.e. our example will follow the implementation of an inverse kinematics solver. Once the problem and motion solver have been implemented, we can compute the robot configuration using EXOTica with the following code:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;exotica/Exotica.h&gt;</span><span class="cp"></span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">exotica</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">MotionSolver_ptr</span> <span class="n">solver</span> <span class="o">=</span> <span class="n">XMLLoader</span><span class="o">::</span><span class="n">loadSolver</span><span class="p">(</span><span class="s">&quot;{exotica_examples}/resources/configs/example_ik.xml&quot;</span><span class="p">);</span>
+    <span class="n">Eigen</span><span class="o">::</span><span class="n">MatrixXd</span> <span class="n">solution</span><span class="p">;</span>
+    <span class="n">solver</span><span class="o">-&gt;</span><span class="n">Solve</span><span class="p">(</span><span class="n">solution</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This snippet shows how little code is required to run a motion planning experiment. We load a motion solver and a problem definition from an example configuration file located in the <code class="docutils literal"><span class="pre">exotica_examples</span></code> package, allocate the output variable, and solve the problem using three lines of code. What this snippet does not show is the definition of the planning problem, the implementation of the algorithm and an array of other tools available in EXOTica. The running example will focus on motion planning. However, we view motion planning and control as two approaches to solving the same motion synthesis problem at different scales. For example, the problem could be viewed as an end-pose motion planning problem as well as operational space control, when executed in a loop. This allows us to formulate complex control problems as re-planning and vice versa. EXOTica provides the tools to implement such systems.</p>
+<p>To motivate and explain the EXOTica software framework, we focus on how it can be used in research and prototyping. We will do this by describing how problems and solvers are defined, and the various tools they use.</p>
+<div class="section" id="system-overview">
+<h2>System overview<a class="headerlink" href="#system-overview" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/overview.png"><img alt="_images/overview.png" class="align-center" src="_images/overview.png" style="width: 100%;" /></a>
+<p>Prototyping of novel motion planning algorithms relies on defining mathematical models of the robotic system and its environment. To aid this process, EXOTica provides several abstractions and generic interfaces that are used as components for building algorithms. The diagram above shows the three components central to algorithm design in EXOTica: (1) a <code class="docutils literal"><span class="pre">planning</span> <span class="pre">scene</span></code>, providing tools to describe the state of the robot and the environment, (2) a <code class="docutils literal"><span class="pre">planning</span> <span class="pre">problem</span></code> formally defining the task, and (3) a <code class="docutils literal"><span class="pre">motion</span> <span class="pre">solver</span></code>. These abstractions allow us to separate problem definitions from solvers. In particular, motion solvers implement algorithms such as <a class="reference external" href="http://doi.acm.org/10.1145/1553374.1553508">AICO</a> and <a class="reference external" href="https://ieeexplore.ieee.org/document/844730">RRTConnect</a>. These implementations may perform trajectory optimization, randomized sampling, or any other computation which requires a very specific problem formulation.</p>
+<p>How the problem is formulated is fully contained within the definition of a <code class="docutils literal"><span class="pre">planning</span> <span class="pre">problem</span></code>. Each algorithm solves exactly one type of motion planning problem while one type of problem may be compatible with multiple solvers. As a result, several algorithms can be benchmarked on the exact same problem. When benchmarking two algorithms that are compatible with different types of problems, the problems have to be converted explicitly. This is a useful feature that makes it easy to track differences between problem formulations that are intended to describe the same task.</p>
+<p>All planning problems use the <code class="docutils literal"><span class="pre">task</span> <span class="pre">maps</span></code> as components to build cost functions, constraints, or validity checking criteria. Task maps perform useful computations such as forward kinematics, center-of-mass position calculation, and joint limit violation error computation. To further support the extensibility of EXOTica, the motion solvers and the task maps are loaded into EXOTica as plug-ins. As such, they can be developed separately and loaded on demand. One such example is the plug-in which wraps the sampling-based algorithms implemented in the <a class="reference external" href="http://ompl.kavrakilab.org">OMPL library</a>.</p>
+<p>The diagram above also shows the <cite>planning scene</cite> which separates the computation of kinematics from the computation of task related quantities.</p>
+</div>
+<div class="section" id="system-model">
+<h2>System model<a class="headerlink" href="#system-model" title="Permalink to this headline">¶</a></h2>
+<p>To synthesize motion, we describe the system consisting of the robot and its environment using a mathematical model. This system model may be kinematic or it may include dynamic properties and constraints. EXOTica uses the system model to evaluate the state using tools implemented inside the <code class="docutils literal"><span class="pre">planning</span> <span class="pre">scene</span></code>. The system diagram shows the <code class="docutils literal"><span class="pre">planning</span> <span class="pre">scene</span></code> as a part of the planning problem where it performs several computations required for evaluating the problem.</p>
+<div class="section" id="planning-scene">
+<h3>Planning scene<a class="headerlink" href="#planning-scene" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">planning</span> <span class="pre">scene</span></code> implements the tools for updating and managing the robot model and the environment. The robot model is represented by a kinematic tree which stores both the kinematic and dynamic properties of the robot, e.g., link masses and shapes, joint definitions, etc. The environment is a collection of additional models that are not part of the robot tree but that may interact with the robot. The environment may contain reference frames, other simplified models (geometric shapes), and real sensor data based representations such as pointclouds and <a class="reference external" href="http://octomap.github.com">OctoMaps</a>. The planning scene implements algorithms for managing the objects in the environment (e.g. adding/removing obstacles) as well as computing forward kinematics and forward dynamics.</p>
+<p>The system is parametrized by a set of variables that correspond to controllable elements, e.g. the robot joints. The full state of the system is described using these variables and we will refer to it as the <code class="docutils literal"><span class="pre">robot</span> <span class="pre">state</span></code>. In some cases, only a subset of the robot state is controlled. We call this subset the <code class="docutils literal"><span class="pre">joint</span> <span class="pre">group</span></code>. Analogous to the <a class="reference external" href="https://moveit.ros.org/">MoveIt!</a> definition of a move group, a joint group is a selection of controlled variables used for planning or control. From now on, whenever we refer to a joint state, we are referring to the state of the joint group.</p>
+<p>The system model may be kinematic, kino-dynamic, or fully dynamic. The robot state is then described by joint positions, joint positions and velocities, or full system dynamics respectively. The system dynamics may be provided via a physics simulator. We will only consider the kinematic model for simplicity.</p>
+<p>The system model is implemented as a tree structure mimicking the structure implemented in the <a class="reference external" href="http://www.orocos.org/kdl">KDL library</a>. The diagram below illustrates the kinematic tree of a planar robot arm.</p>
+<a class="reference internal image-reference" href="_images/kinematic_tree.png"><img alt="_images/kinematic_tree.png" class="align-center" src="_images/kinematic_tree.png" style="width: 100%;" /></a>
+<p>The planning scene stores the kinematic tree composed of the robot model and the environment. The diagram shows a robot model which has two revolute joints <span class="math">\(J_1\)</span> and <span class="math">\(J_2\)</span> defined by joint angles <span class="math">\(\theta_1\)</span> and <span class="math">\(\theta_2\)</span> respectively, a base frame and an end effector frame <span class="math">\(A\)</span>. A grasping target is located at frame <span class="math">\(B\)</span>. The root of the tree is at the world frame. The grasping task can exploit the relative transformation <span class="math">\(M_A^B\)</span>.</p>
+<p>Every node in the tree has one parent and possibly multiple children. The node defines a spatial transformation from the tip frame of the parent node to its own tip frame. Every node consists of a position offset of the joint, a joint transformation, and a tip frame transformation (see the <a class="reference external" href="http://www.orocos.org/kdl">KDL documentation</a>). The joint transformation is constant for fixed joints. The transformations of all joints that belong to the controlled <code class="docutils literal"><span class="pre">joint</span> <span class="pre">group</span></code> are updated based on the joint state. During the update, the local transformation of the node is updated and the transformation of the tip w.r.t. the world frame is accumulated. The nodes of the tree are updated in a topological order (from the root to the leafs). This ensures that the tip frame of the parent node is always updated before its children.</p>
+<p>The EXOTica <code class="docutils literal"><span class="pre">Scene</span></code> implements a method for publishing the frames to <a class="reference external" href="http://wiki.ros.org/rviz">RViz</a> using <a class="reference external" href="http://wiki.ros.org/tf2">tf</a> for debugging purposes. These frames can be visualized using the <a class="reference external" href="http://wiki.ros.org/tf2">tf</a> and the <code class="docutils literal"><span class="pre">RobotModel</span></code> plug-ins.</p>
+<p>The system model provides an interface to answer kinematic queries. A query can be submitted to the <code class="docutils literal"><span class="pre">Scene</span></code>, requesting arbitrary frame transformations. Each requested frame has the following format:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Name of the tip frame (Frame A)</li>
+<li>Offset of the tip frame</li>
+<li>Name of the base frame (Frame B)</li>
+<li>Offset the of base frame</li>
+</ul>
+</div></blockquote>
+<p>The diagram above illustrates an example scene. Any existing frame can be used to define a base or a tip frame of a relative transformation.
+The response to the query will then contain a transformation of the tip frame with respect to the base frame. If an offset is specified, each respective frame will be redefined to include the offset. If a base frame is not specified, the world frame will be used by default. Since all transformations of the tree nodes w.r.t. the world frame have been computed during the update, the query computation only adds the tip frame to the inverted base frame <span class="math">\($M_A^B={M_B^{world}}^{-1}M_A^{world}\)</span>.
+We use the following notation: the subscript and superscript denote tip and base frames respectively. <span class="math">\(M_A^B\)</span> reads: transformation of frame <span class="math">\(A\)</span> w.r.t. frame <span class="math">\(B\)</span>.}</p>
+<p>The <code class="docutils literal"><span class="pre">Scene</span></code> has been designed to answer a large number of requests in batches. While some smaller problems, such as simple kinematic chains, may be more costly to update, larger kinematic trees with a large number of leaf nodes are handled more efficiently by simply iterating over the requested frames.MoveIt!</p>
+<p>The system model also computes derivatives of the spatial frames w.r.t. the control variables. These are computed as geometric Jacobians (<span class="math">\(J\)</span>) and Jacobian derivatives (<span class="math">\(\dot{J}\)</span>). The Jacobian has six rows and a number of columns corresponding to the number of controlled joints. Each column represents a spatial velocity in form of a <code class="docutils literal"><span class="pre">twist</span></code>. The twist <span class="math">\(^Bt^i_A\)</span> describes the linear and angular rate of motion of the tip frame <span class="math">\(A\)</span> w.r.t. the joint frame <span class="math">\(i\)</span> expressed in the base frame <span class="math">\(B\)</span>. We use the notation with the <code class="docutils literal"><span class="pre">expressed</span> <span class="pre">in</span> <span class="pre">frame</span></code> in the left superscript. Using the twist representation allows us to correctly compute spatial transformations using the <a class="reference external" href="http://ingmec.ual.es/~jlblanco/papers/jlblanco2010geometry3D_techrep.pdf">Lie group algebra</a>.</p>
+<p>The kinematic tree represents the robot kinematic model and the objects in the environment. The robot model can be loaded from a pair of <a class="reference external" href="https://moveit.ros.org/">MoveIt!</a> compatible URDF and SRDF files. The URDF file specifies the robot kinematics, joint transformations and range of motion, frame locations, mass properties and collision shapes. The SRDF file specifies the base of the robot (fixed, mobile, or floating), joint groups, and collision pairs. The robot configuration created for <a class="reference external" href="https://moveit.ros.org/">MoveIt!</a> is fully compatible with EXOTica. The <code class="docutils literal"><span class="pre">Scene</span></code> also implements an interface to populate the environment with collision objects from <a class="reference external" href="https://moveit.ros.org/">MoveIt!</a> planning scene messages and from <a class="reference external" href="https://moveit.ros.org/">MoveIt!</a> generated text files storing the scene objects. The <code class="docutils literal"><span class="pre">Scene</span></code> may load additional basic shape primitives, meshes, or <a class="reference external" href="http://octomap.github.com">OctoMaps</a>.</p>
+<p>In order to perform collision checking, a <code class="docutils literal"><span class="pre">CollisionScene</span></code> can be loaded as a plug-in into a <code class="docutils literal"><span class="pre">Scene</span></code>. This allows for different implementations of collision checking algorithms to be used as required and does not tie EXOTica to a particular collision checking library. For instance, by default, EXOTica ships with two <code class="docutils literal"><span class="pre">CollisionScene</span></code> implementations using the FCL library - one based on the stable FCL version also used in <a class="reference external" href="https://moveit.ros.org/">MoveIt!</a> and one tracking the development revision of FCL. The <code class="docutils literal"><span class="pre">CollisionScene</span></code> plug-ins may hereby implement solely binary collision checking, or additional contact information such as signed distance, contact (or nearest) points, as well as contact point normals. This information is captured and exposed in a so-called <code class="docutils literal"><span class="pre">CollisionProxy</span></code>.</p>
+<p>Referring back to the example inverse kinematics problem, the planning scene consists of the kinematics of the robot with a base link rigidly attached to the world frame. We choose to use a simplified version following the DH parameters of the KUKA LWR3 arm which we load from a pair of URDF and SRDF files. This robot has seven revolute joints. The joint group will consist of all seven joints as we intend to control all of them. We will not be performing collision checking in this experiment. The <code class="docutils literal"><span class="pre">planning</span> <span class="pre">scene</span></code> is initialized from an EXOTica XML configuration file. The XML file contains the following lines related to the setup of the <code class="docutils literal"><span class="pre">planning</span> <span class="pre">scene</span></code>:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;PlanningScene&gt;</span>
+    <span class="nt">&lt;Scene&gt;</span>
+        <span class="nt">&lt;JointGroup&gt;</span>arm<span class="nt">&lt;/JointGroup&gt;</span>
+        <span class="nt">&lt;URDF&gt;</span>{exotica_examples}/resources/robots/lwr_simplified.urdf<span class="nt">&lt;/URDF&gt;</span>
+        <span class="nt">&lt;SRDF&gt;</span>{exotica_examples}/resources/robots/lwr_simplified.srdf<span class="nt">&lt;/SRDF&gt;</span>
+    <span class="nt">&lt;/Scene&gt;</span>
+<span class="nt">&lt;/PlanningScene&gt;</span>
+</pre></div>
+</div>
+<p>where the joint group parameter selects a joint group defined in the SRDF file by name. The robot model is loaded from the URDF and SRDF files specified here. When the paths are not specified, EXOTica attempts to load the robot model from the <code class="docutils literal"><span class="pre">robot_description</span></code> ROS parameter by default. EXOTica additionally allows to set ROS parameters for the planning robot description from specified file paths if desired.</p>
+<p>The system model provides access to some generic tools for computing kinematic and dynamic properties of the system. These tools have been designed for performing calculations for solving a wide variety of motion planning problems. The system modeling tools are generic but they can be ultimately replaced with a more specific set of kinematics and dynamics solvers in the final deployment of the algorithm. This is, however, outside of the scope of EXOTica.</p>
+</div>
+</div>
+<div class="section" id="problem-definition">
+<h2>Problem definition<a class="headerlink" href="#problem-definition" title="Permalink to this headline">¶</a></h2>
+<p>EXOTica was designed for prototyping and benchmarking motion synthesis algorithms. The main objective of our framework is to provide tools for constructing problems and prototyping solvers with ease. To do so, we first separate the definition of the problem from the implementation of the solver. Each problem consists of several standardized components which we refer to as <code class="docutils literal"><span class="pre">task</span> <span class="pre">maps</span></code>.</p>
+<div class="section" id="task-maps">
+<h3>Task maps<a class="headerlink" href="#task-maps" title="Permalink to this headline">¶</a></h3>
+<p>The core element of every problem defined within EXOTica is the function mapping from the configuration space (i.e. the problem state which captures the model state, a set of controlled and uncontrolled variables, and the state of the environment) to a task space. We call this function a <code class="docutils literal"><span class="pre">task</span> <span class="pre">map</span></code>. For example, a task map computes the center-of-mass of the robot in the world frame. A task map is a mapping from the configuration space to an arbitrary task space. The task space is, in fact, defined by the output of this function.</p>
+<p>The following task maps are implemented in EXOTica:</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Joint space task maps</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="task_maps/joint_pose.html">Joint position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="task_maps/joint_limits.html">Joint limits</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">World space task maps</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="task_maps/eff_frame.html">End-effector frame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="task_maps/eff_position.html">End-effector position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="task_maps/eff_orientation.html">End-effector orientation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="task_maps/eff_distance.html">End-effector distance</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Stability task maps</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="task_maps/com.html">Center of mass</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Collision task maps</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="task_maps/sphere_collision.html">Sphere sollision</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<dl class="docutils">
+<dt>Undocumented:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">JointVelocityLimit</span></code></li>
+<li><code class="docutils literal"><span class="pre">JointVelocityBackwardDifference</span></code></li>
+<li><code class="docutils literal"><span class="pre">JointJerkBackwardDifference</span></code></li>
+<li><code class="docutils literal"><span class="pre">JointAccelerationBackwardDifference</span></code></li>
+<li><code class="docutils literal"><span class="pre">EffVelocity</span></code></li>
+<li><code class="docutils literal"><span class="pre">LookAt</span></code></li>
+<li><code class="docutils literal"><span class="pre">EffAxisAlignment</span></code></li>
+<li><code class="docutils literal"><span class="pre">PointToLine</span></code></li>
+<li><code class="docutils literal"><span class="pre">PointToPlane</span></code></li>
+<li><code class="docutils literal"><span class="pre">QuasiStatic</span></code></li>
+<li><code class="docutils literal"><span class="pre">CollisionCheck</span></code></li>
+<li><code class="docutils literal"><span class="pre">InteractionMesh</span></code></li>
+</ul>
+</dd>
+</dl>
+<p>In our example, we use the <code class="docutils literal"><span class="pre">end-effector</span> <span class="pre">position</span></code> task map. The task space is therefore <span class="math">\(\Phi_\text{EffPos}(\boldsymbol{x})\in\mathbb{R}^3\)</span>. The task map is loaded from the XML file. The following lines of the XML configuration file correspond to the task map definition:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;Maps&gt;</span>
+    <span class="nt">&lt;EffPosition</span> <span class="na">Name=</span><span class="s">&quot;Position&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;EndEffector&gt;</span>
+        <span class="nt">&lt;Frame</span> <span class="na">Link=</span><span class="s">&quot;lwr_arm_7_link&quot;</span> <span class="na">BaseOffset=</span><span class="s">&quot;0.5 0 0.5 0 0 0 1&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/EndEffector&gt;</span>
+    <span class="nt">&lt;/EffPosition&gt;</span>
+<span class="nt">&lt;/Maps&gt;</span>
+</pre></div>
+</div>
+<p>where the only parameter of the task map is a single relative spatial frame. This frame defines the translation of the seventh robot link relative to the coordinates <span class="math">\((0.5, 0, 0.5)\)</span> in the world frame. If no frame is specified, world frame is assumed by default. If a relative offset is not specified, an identity transformation offset is assumed. This example is only intended to compute inverse kinematics, we have therefore chosen to only minimize the end-effector position error. However, an arbitrary number of cost terms can be added by adding multiple task maps to this problem definition. For instance, we could easily add another task map to constrain the orientation of the end-effector.</p>
+<p>The output of a single task map is a segment of the <code class="docutils literal"><span class="pre">task</span> <span class="pre">space</span> <span class="pre">vector</span></code>. For more information read the section on <a class="reference internal" href="advanced/task_space_vector.html#task-space-vector"><span class="std std-ref">Task space vector handling</span></a>. The input of a task map is the states of the robot model and environment as well as the arbitrary number of frame transformations required for the calculations. These are computed using the <code class="docutils literal"><span class="pre">planning</span> <span class="pre">scene</span></code>. The task map implements the mapping within its <code class="docutils literal"><span class="pre">update</span></code> method. This method has 3 different overloads depending on what order of derivative is requested: a) no derivative (e.g. in sampling), b) first-order derivatives (e.g. Jacobian used in gradient descent), and c) second-order derivatives. Not all overloads have to be defined, i.e. a collision checking task map may only detect collisions but it will not provide any gradients (derivatives). We exploit this for fast collision checking for <a class="reference external" href="http://planning.cs.uiuc.edu/">sampling-based solvers</a>.</p>
+<p>The task map will update the task space vector and its derivatives when the solver requires it. These updates are normally triggered by the solver and they do not have to be called manually. This also ensures that the <code class="docutils literal"><span class="pre">task</span> <span class="pre">space</span> <span class="pre">vector</span></code> is updated correctly. The collection of task maps is therefore central to formally defining motion planning problems. How the output of the task map is used then depends on the type of the planning problem.</p>
+</div>
+</div>
+<div class="section" id="planning-problems">
+<h2>Planning problems<a class="headerlink" href="#planning-problems" title="Permalink to this headline">¶</a></h2>
+<p>A <code class="docutils literal"><span class="pre">planning</span> <span class="pre">problem</span></code> within EXOTica represents a specific formulation of a motion planning problem. Since every formulation has very specific advantages for a particular type of application, the formulations may vary significantly. To provide a unified framework, we identify several categories of common features of different types of problems.</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">EXOTica planning problems</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="problems/unconstrained_end_pose_problem.html">Unconstrained end-pose problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problems/unconstrained_time_indexed_problem.html">Unconstrained time-indexed problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problems/sampling_problem.html">Sampling problem</a></li>
+</ul>
+</div>
+<dl class="docutils">
+<dt>Undocumented:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">EndPoseProblem</span></code></li>
+<li><code class="docutils literal"><span class="pre">BoundedEndPoseProblem</span></code></li>
+<li><code class="docutils literal"><span class="pre">TimeIndexedProblem</span></code></li>
+<li><code class="docutils literal"><span class="pre">BoundedTimeIndexedProblem</span></code></li>
+<li><code class="docutils literal"><span class="pre">TimeIndexedSamplingProblem</span></code></li>
+</ul>
+</dd>
+</dl>
+<p>Depending on how the system is modeled, we distinguish: a) kinematic, b) kino-dynamic, and c) dynamic systems. We then categorize the problem based on the <code class="docutils literal"><span class="pre">state</span> <span class="pre">representation</span></code> required by these types of systems: position <span class="math">\((\boldsymbol{x})\)</span>, position and velocity <span class="math">\((\boldsymbol{x}, \dot{\boldsymbol{x}})\)</span>, and the full dynamic state <span class="math">\((\boldsymbol{x}, \dot{\boldsymbol{x}}, \ddot{\boldsymbol{x}}, \boldsymbol{\tau}, \boldsymbol{F})\)</span> where the variables denote positions, velocities, accelerations, joint torques, and external forces respectively.
+We then distinguish between <code class="docutils literal"><span class="pre">planning</span> <span class="pre">spaces</span></code>: a) configuration space, and b) task space (e.g. end-effector position and orientation). These categories define how the state of the the system is stored. This affects both memory layout and the format of the input to the solver (e.g. the start state has to include joint positions and velocities).</p>
+<p>Furthermore, we categorize the problem based on the type of the output. The <code class="docutils literal"><span class="pre">output</span> <span class="pre">type</span></code> may include: a) single configuration (e.g. output of a inverse kinematics solver), b) a time-indexed trajectory (e.g. output of trajectory optimization), or c) non-time indexed trajectory (e.g. output of a sampling-based solver). Other types and subtypes of problems do exist. A time-indexed trajectory may have fixed or variable number of time steps or a variable timing between steps.</p>
+<p>EXOTica uses a problem naming system based on this categorization. The names are constructed based on the four main categories: <code class="docutils literal"><span class="pre">planning</span> <span class="pre">space</span></code>, <code class="docutils literal"><span class="pre">problem</span> <span class="pre">type</span></code>, <code class="docutils literal"><span class="pre">state</span> <span class="pre">representation</span></code> and the <code class="docutils literal"><span class="pre">output</span> <span class="pre">type</span></code>. The table below shows how the name is constructed. To achieve brevity, each category has a default type. The default types are <code class="docutils literal"><span class="pre">configuration</span> <span class="pre">space</span></code>, <code class="docutils literal"><span class="pre">sampling</span></code>, <code class="docutils literal"><span class="pre">kinematic</span></code>, <code class="docutils literal"><span class="pre">non-time</span> <span class="pre">indexed</span> <span class="pre">trajectory</span></code> respectively for each category in this table. When the problem falls within the default type for a category, this type is omitted from the name. For example, a problem of type <code class="docutils literal"><span class="pre">SamplingProblem</span></code> is referring to a configuration space sampling problem using a kinematic robot model and returning a non-time indexed trajectory.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="28%" />
+<col width="28%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Planning
+space</th>
+<th class="head">Problem
+type</th>
+<th class="head">State
+representation</th>
+<th class="head">Output
+type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>CSpace</em></td>
+<td><strong>Unconstrained</strong></td>
+<td><em>Kinematic</em></td>
+<td><strong>EndPose</strong></td>
+</tr>
+<tr class="row-odd"><td><em>CSpace</em></td>
+<td><strong>Unconstrained</strong></td>
+<td><em>Kinematic</em></td>
+<td><strong>TimeIndexed</strong></td>
+</tr>
+<tr class="row-even"><td><em>CSpace</em></td>
+<td><strong>Sampling</strong></td>
+<td><em>Kinematic</em></td>
+<td><em>NonIndexed</em></td>
+</tr>
+<tr class="row-odd"><td><em>CSpace</em></td>
+<td><strong>NLP</strong></td>
+<td><strong>Dynamic</strong></td>
+<td><strong>TimeIndexed</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="motion-solvers">
+<h2>Motion solvers<a class="headerlink" href="#motion-solvers" title="Permalink to this headline">¶</a></h2>
+<p>The structure of a planning problem within EXOTica allows us to formally define an interface for solving specific types of problems. The motion solver then takes the problem instance as input and computes the solution. How this computation is performed depends entirely on the implementation of the solver. EXOTica offers several built-in solvers.</p>
+<div class="toctree-wrapper compound">
+</div>
+<dl class="docutils">
+<dt>Undocumented:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">AICOSolver</span></code></li>
+<li><code class="docutils literal"><span class="pre">IKSolver</span></code></li>
+<li><code class="docutils literal"><span class="pre">LevenbergMarquardtSolver</span></code></li>
+<li><code class="docutils literal"><span class="pre">OMPLSolver</span></code></li>
+<li><code class="docutils literal"><span class="pre">TimeIndexedRRTConnectSolver</span></code></li>
+</ul>
+</dd>
+</dl>
+<p>In our example, we created a system model and an unconstrained end-pose problem that uses this system model. We will now use our implementation of the inverse kinematics solver to compute the solution. The following XML configures the IK solver:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;IKSolver</span> <span class="na">Name=</span><span class="s">&quot;MySolver&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;MaxIterations&gt;</span>1<span class="nt">&lt;/MaxIterations&gt;</span>
+<span class="nt">&lt;/IKSolver&gt;</span>
+</pre></div>
+</div>
+<p>EXOTica was designed for development of new motion planning algorithms and for running benchmarks. The solver in our example can be easily changed by editing the XML file or from code.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="task_maps/joint_pose.html" class="btn btn-neutral float-right" title="Joint position" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral" title="Installing EXOTica" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vladimir Ivan, Yiming Yang, Wolfgang Merkt, Michael Camilleri, Sethu Vijayakumar - and contributors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'5.0-beta1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

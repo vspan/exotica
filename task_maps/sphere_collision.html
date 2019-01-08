@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sphere sollision &mdash; EXOTica 5.0-beta1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="EXOTica 5.0-beta1 documentation" href="../index.html"/>
+        <link rel="up" title="EXOTica overview" href="../overview.html"/>
+        <link rel="next" title="Unconstrained end-pose problem" href="../problems/unconstrained_end_pose_problem.html"/>
+        <link rel="prev" title="Center of mass" href="com.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> EXOTica
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installing EXOTica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../overview.html">EXOTica overview</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#system-overview">System overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#system-model">System model</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../overview.html#problem-definition">Problem definition</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../overview.html#task-maps">Task maps</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="joint_pose.html">Joint position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="joint_limits.html">Joint limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="eff_frame.html">End-effector frame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="eff_position.html">End-effector position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="eff_orientation.html">End-effector orientation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="eff_distance.html">End-effector distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="com.html">Center of mass</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Sphere sollision</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#planning-problems">Planning problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#motion-solvers">Motion solvers</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_python.html">Quickstart: Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_cpp.html">Quickstart: C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../using_exotica_cpp.html">Solving planning problems in c++</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../own_robot.html">Creating a planner package for your own robot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialization.html">Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual_initialization.html">Manual Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../XML.html">XML Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../XML-Parsing.html">XML Parsing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Common-Initialization-Step.html">Common Initialization Step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Setting-up-ROSlaunch.html">Setting up ROSlaunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Setting-up-problems-and-solvers.html">Setting up Problems and Solvers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/task_space_vector.html">Task space vector handling</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Task_maps.html">Task Maps</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Code-Formatting.html">Code Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Styleguide-and-Naming-Convention.html">Code Styleguide and Naming Convention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Python-API.html">Python Bindings</a></li>
+<li class="toctree-l1"><a class="reference external" href="./doxygen_cpp/index.html#http://">Doxygen C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Documentation.html">Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">EXOTica</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../overview.html">EXOTica overview</a> &raquo;</li>
+        
+      <li>Sphere sollision</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphere-sollision">
+<span id="sphere-collision"></span><h1>Sphere sollision<a class="headerlink" href="#sphere-sollision" title="Permalink to this headline">¶</a></h1>
+<p>Sphere collision task map provides a differentiable collision distance metric. The collision shapes are approximated by spheres. Each sphere is attached to the kinematic structure of the robot or to the environment. Each sphere is then assigned a collision group, e.g. <span class="math">\(i\in \mathcal{G}\)</span>. Spheres within the same group do not collide with each other, while spheres from different groups do. The collision cost is computed as:</p>
+<div class="math">
+\[\Phi_\text{CSphere}(\boldsymbol{x}) = \sum_{i,j}^{G}\frac{1}{1+ e^{5\epsilon (||\boldsymbol{P}_i^\text{world}-\boldsymbol{P}_j^\text{world}||-r_i-r_j)} },\]</div>
+<p>where <span class="math">\(i, j\)</span> are indices of spheres from different collision groups, <span class="math">\(\epsilon\)</span> is a precision parameter, <span class="math">\(\boldsymbol{P}_i^\text{world}\)</span> and <span class="math">\(\boldsymbol{P}_j^\text{world}\)</span> are positions of the centers of the spheres, and <span class="math">\(r_i, r_j\)</span> are the radii of the spheres. The sigmoid function raises from <span class="math">\(0\)</span> to <span class="math">\(1\)</span>, with the steepest slope at the point where the two spheres collide. Far objects contribute small amount of error while colliding objects produce relatively large amounts of error. The precision parameter can be used to adjust the fall-off of the error function, e.g. a precision factor of <span class="math">\(10^3\)</span> will result in negligible error when the spheres are further than <span class="math">\(10^{-3}`m apart. The constant multiplier of :math:`5\)</span> in was chosen to achieve this fall-off profile.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../problems/unconstrained_end_pose_problem.html" class="btn btn-neutral float-right" title="Unconstrained end-pose problem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="com.html" class="btn btn-neutral" title="Center of mass" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vladimir Ivan, Yiming Yang, Wolfgang Merkt, Michael Camilleri, Sethu Vijayakumar - and contributors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'5.0-beta1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

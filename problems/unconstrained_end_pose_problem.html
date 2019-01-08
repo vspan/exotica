@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Unconstrained end-pose problem &mdash; EXOTica 5.0-beta1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="EXOTica 5.0-beta1 documentation" href="../index.html"/>
+        <link rel="up" title="EXOTica overview" href="../overview.html"/>
+        <link rel="next" title="Unconstrained time-indexed problem" href="unconstrained_time_indexed_problem.html"/>
+        <link rel="prev" title="Sphere sollision" href="../task_maps/sphere_collision.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> EXOTica
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installing EXOTica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../overview.html">EXOTica overview</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#system-overview">System overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#system-model">System model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#problem-definition">Problem definition</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../overview.html#planning-problems">Planning problems</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Unconstrained end-pose problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unconstrained_time_indexed_problem.html">Unconstrained time-indexed problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sampling_problem.html">Sampling problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#motion-solvers">Motion solvers</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_python.html">Quickstart: Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_cpp.html">Quickstart: C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../using_exotica_cpp.html">Solving planning problems in c++</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../own_robot.html">Creating a planner package for your own robot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialization.html">Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual_initialization.html">Manual Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../XML.html">XML Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../XML-Parsing.html">XML Parsing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Common-Initialization-Step.html">Common Initialization Step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Setting-up-ROSlaunch.html">Setting up ROSlaunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Setting-up-problems-and-solvers.html">Setting up Problems and Solvers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/task_space_vector.html">Task space vector handling</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Task_maps.html">Task Maps</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Code-Formatting.html">Code Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Styleguide-and-Naming-Convention.html">Code Styleguide and Naming Convention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Python-API.html">Python Bindings</a></li>
+<li class="toctree-l1"><a class="reference external" href="./doxygen_cpp/index.html#http://">Doxygen C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Documentation.html">Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">EXOTica</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../overview.html">EXOTica overview</a> &raquo;</li>
+        
+      <li>Unconstrained end-pose problem</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unconstrained-end-pose-problem">
+<span id="id1"></span><h1>Unconstrained end-pose problem<a class="headerlink" href="#unconstrained-end-pose-problem" title="Permalink to this headline">¶</a></h1>
+<p>The unconstrained end-pose problem defines a problem minimizing the quadratic cost using a kinematic system. The state is represented by joint configurations and the output is a single configuration. The probelm is formulated as:</p>
+<div class="math">
+\[\underset{\boldsymbol{x}}{\text{argmin}} (f(\boldsymbol{x})^\top Q f(\boldsymbol{x})).\]</div>
+<p>The cost function is composed of weighted components:</p>
+<div class="math">
+\[f(\boldsymbol{x})=\sum_i \rho_i||\Phi_i(\boldsymbol{x})-\boldsymbol{y}^*_i||,\]</div>
+<p>where <span class="math">\(\Phi_i(\boldsymbol{x})\)</span> is the mapping function of the <span class="math">\(i\)</span>-th task map, <span class="math">\(\boldsymbol{y}^*_i\)</span> is the reference or goal in the task space, and <span class="math">\(\rho_i\)</span> is the relative weighting of the task. By definition, This problem provides the first derivative of the quadratic cost function. The derivatives of the task terms are provided by the <cite>task map</cite>. Additionally, configuration space weighting <span class="math">\(W\)</span> is specified. This allows us to scale the cost of moving each joint (or control variable) individually. Optionally, a nominal pose <span class="math">\(\boldsymbol{x}_\text{nominal}\)</span> is provided as a reference often used to minimize secondary cost in case of redundancies.
+This type of problem can be used for solving inverse kinematics or to implement operational space control.</p>
+<p>The example inverse kinematics problem is using this formulation. The full problem definition contains the definition of the <cite>planning scene</cite> and the <cite>task map</cite> as discussed previously. We also set the configuration space weighting <span class="math">\(W\)</span>. The problem is then fully defined using the following XML string:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;UnconstrainedEndPoseProblem</span> <span class="na">Name=</span><span class="s">&quot;MyProblem&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;PlanningScene&gt;</span>
+    <span class="nt">&lt;Scene&gt;</span>
+      <span class="nt">&lt;JointGroup&gt;</span>arm<span class="nt">&lt;/JointGroup&gt;</span>
+      <span class="nt">&lt;URDF&gt;</span>{exotica_examples}/resources/robots/lwr_simplified.urdf<span class="nt">&lt;/URDF&gt;</span>
+      <span class="nt">&lt;SRDF&gt;</span>{exotica_examples}/resources/robots/lwr_simplified.srdf<span class="nt">&lt;/SRDF&gt;</span>
+    <span class="nt">&lt;/Scene&gt;</span>
+  <span class="nt">&lt;/PlanningScene&gt;</span>
+  <span class="nt">&lt;Maps&gt;</span>
+    <span class="nt">&lt;EffPosition</span> <span class="na">Name=</span><span class="s">&quot;Position&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;EndEffector&gt;</span>
+          <span class="nt">&lt;Frame</span> <span class="na">Link=</span><span class="s">&quot;lwr_arm_7_link&quot;</span> <span class="na">BaseOffset=</span><span class="s">&quot;0.5 0 0.5 0 0 0 1&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/EndEffector&gt;</span>
+    <span class="nt">&lt;/EffPosition&gt;</span>
+  <span class="nt">&lt;/Maps&gt;</span>
+  <span class="nt">&lt;W&gt;</span> 7 6 5 4 3 2 1 <span class="nt">&lt;/W&gt;</span>
+  <span class="nt">&lt;StartState&gt;</span>0 0 0 0 0 0 0<span class="nt">&lt;/StartState&gt;</span>
+  <span class="nt">&lt;NominalState&gt;</span>0 0 0 0 0 0 0<span class="nt">&lt;/NominalState&gt;</span>
+<span class="nt">&lt;/UnconstrainedEndPoseProblem&gt;</span>
+</pre></div>
+</div>
+<p>The weighting <span class="math">\(W\)</span> is set to reduce movement of the joints closer to the root (root joint weight <span class="math">\(7\)</span> to tip joint weight <span class="math">\(1\)</span>). We set the start and the nominal configuration, or state, to a zero vector. This problem is now complete and we can use it to compute the robot configuration which moves the top of the robot to coordinates <span class="math">\((0.5, 0, 0.5)\)</span>. EXOTica provides several useful tools that make defining problems using XML more versatile. All strings are automatically parsed as the required data types. Furthermore, file paths containing curly bracket macros will be replaced with catkin package paths, e.g. <code class="docutils literal"><span class="pre">{exotica_examples}</span></code> will get replaced with the absolute path to the EXOTica package. This feature combines regular expressions with the rospack library to parse catkin package paths.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="unconstrained_time_indexed_problem.html" class="btn btn-neutral float-right" title="Unconstrained time-indexed problem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../task_maps/sphere_collision.html" class="btn btn-neutral" title="Sphere sollision" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vladimir Ivan, Yiming Yang, Wolfgang Merkt, Michael Camilleri, Sethu Vijayakumar - and contributors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'5.0-beta1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

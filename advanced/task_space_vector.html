@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Task space vector handling &mdash; EXOTica 5.0-beta1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="EXOTica 5.0-beta1 documentation" href="../index.html"/>
+        <link rel="next" title="Initializers" href="../Initializers.html"/>
+        <link rel="prev" title="Setting up Problems and Solvers" href="../Setting-up-problems-and-solvers.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> EXOTica
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installing EXOTica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">EXOTica overview</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_python.html">Quickstart: Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart_cpp.html">Quickstart: C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../using_exotica_cpp.html">Solving planning problems in c++</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../own_robot.html">Creating a planner package for your own robot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialization.html">Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual_initialization.html">Manual Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../XML.html">XML Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../XML-Parsing.html">XML Parsing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Common-Initialization-Step.html">Common Initialization Step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Setting-up-ROSlaunch.html">Setting up ROSlaunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Setting-up-problems-and-solvers.html">Setting up Problems and Solvers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Task space vector handling</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Task_maps.html">Task Maps</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Code-Formatting.html">Code Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Styleguide-and-Naming-Convention.html">Code Styleguide and Naming Convention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Python-API.html">Python Bindings</a></li>
+<li class="toctree-l1"><a class="reference external" href="./doxygen_cpp/index.html#http://">Doxygen C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Documentation.html">Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">EXOTica</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Task space vector handling</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="task-space-vector-handling">
+<span id="task-space-vector"></span><h1>Task space vector handling<a class="headerlink" href="#task-space-vector-handling" title="Permalink to this headline">¶</a></h1>
+<p>The output of a task map is a representation of the robot’s state in the task space. Most task spaces are <span class="math">\(\mathbb{R}^n\)</span>. As such, they can be stored and handled as vectors of real numbers. However, some task maps output configurations in the <span class="math">\(SO(3)\)</span> or the <span class="math">\(SE(3)\)</span> space. In this case, <a class="reference external" href="http://ingmec.ual.es/~jlblanco/papers/jlblanco2010geometry3D_techrep.pdf">Lie group algebra</a> has to be used to correctly compute the additions and subtractions in the task space. The <code class="docutils literal"><span class="pre">task</span> <span class="pre">space</span> <span class="pre">vector</span></code> implements operations on task spaces. The <code class="docutils literal"><span class="pre">task</span> <span class="pre">space</span> <span class="pre">vector</span></code> is a data structure that keeps track of <span class="math">\(SO(3)\)</span> sub-groups within the stored vector. The operations on this vector then implement the Lie group algebra. For example, a spatial frame may be stored as a transformation matrix <span class="math">\(M_A^B\in\mathbb{R}^{4\times4}\)</span>. This matrix will be stored in the <code class="docutils literal"><span class="pre">task</span> <span class="pre">space</span> <span class="pre">vector</span></code>. Performing addition and subtraction on the vector will then be incorrect. The correct transformation is performed by a matrix multiplication. The <code class="docutils literal"><span class="pre">task</span> <span class="pre">space</span> <span class="pre">vector</span></code> keeps track of transformations stored within its structure and applies the correct operations on them. Furthermore, the result of subtraction is always a geometric twist, e.g., <span class="math">\(M_A^B-M_C^B={^B\boldsymbol{t}_A^C}\)</span>. This makes it possible to multiply the result of this operation with a geometric Jacobian, producing a geometrically correct relative transformation. This feature has been used in the implementation of the <a class="reference external" href="http://dynamicsystems.asmedigitalcollection.asme.org/article.aspx?articleid=1403812">inverse kinematics solver</a> and the <a class="reference external" href="http://doi.acm.org/10.1145/1553374.1553508">AICO solver</a>. Additionally,
+a <span class="math">\(SO(3)\)</span> rotation can be represented and stored in different ways, e.g. as a unit quaternion <span class="math">\(\boldsymbol{R}_\mathcal{Q}\in\mathbb{R}^4 \text{ where } ||\boldsymbol{R}_\mathcal{Q}||=1\)</span>, Euler angles <span class="math">\(\boldsymbol{R}_\mathcal{ZYZ},\boldsymbol{R}_\mathcal{ZYX},\boldsymbol{R}_\mathcal{RPY}\in\mathbb{R}^3\)</span>, angle-axis representation <span class="math">\(\boldsymbol{R}_\mathcal{A}\in\mathbb{R}^3 \text{ where } ||R_\mathcal{A}||=\theta\)</span>, rotation matrix <span class="math">\(\boldsymbol{R}\in\mathbb{R}^{3\times3}\)</span>, etc. We handle these representations implicitly. Each sub-group of the <code class="docutils literal"><span class="pre">task</span> <span class="pre">space</span> <span class="pre">vector</span></code> stores the size and type of representation that was used. The operations on the vector first convert the task space coordinates into a rotation matrix representation, then the correct spatial operation is applied and a twist is computed. As a result the input and output dimension may vary, i.e. subtraction of two rotations represented as rotation matrices is a function <span class="math">\(f(R_1, R_2): \mathbb{R}^9 \rightarrow \mathbb{R}^3\)</span>. The result is the angular velocity component of the twist. The <code class="docutils literal"><span class="pre">task</span> <span class="pre">space</span> <span class="pre">vector</span></code> is composed by concatenating outputs of multiple task maps. Each task map specifies if its output contains any components that have to be handled using the Lie group algebra.</p>
+<a class="reference internal image-reference" href="../_images/taskspace.png"><img alt="../_images/taskspace.png" class="align-center" src="../_images/taskspace.png" style="width: 100%;" /></a>
+<p>Task space vector data packing combining three position coordinates <span class="math">\(x, y, z\in \mathbb{R}\)</span> and a sub-vector containing a <span class="math">\(SO(3)\)</span> rotation represented as a unit quaternion. The subtraction calculation of two task space vectors <span class="math">\(\boldsymbol{y}_1\)</span> and <span class="math">\(\boldsymbol{y}_2\)</span> first converts the quaternions into rotation matrices <span class="math">\(R_1\)</span> and <span class="math">\(R_2\)</span> and performs the rotation operation <span class="math">\(R_2^{-1}R_1\)</span>. The result is then converted into angular velocities <span class="math">\(\omega_x, \omega_y, \omega_z\)</span> and packed into the output vector <span class="math">\(\vartriangle\!\!y\)</span>. Notice that the dimensionality of <span class="math">\(\vartriangle\!\!\boldsymbol{y}\in\mathbb{R}^6\)</span> and <span class="math">\(\boldsymbol{y}_1, \boldsymbol{y}_2\in\mathbb{R}^7\)</span> are different.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Initializers.html" class="btn btn-neutral float-right" title="Initializers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Setting-up-problems-and-solvers.html" class="btn btn-neutral" title="Setting up Problems and Solvers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vladimir Ivan, Yiming Yang, Wolfgang Merkt, Michael Camilleri, Sethu Vijayakumar - and contributors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'5.0-beta1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Code Styleguide and Naming Convention &mdash; EXOTica 5.0-beta1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="EXOTica 5.0-beta1 documentation" href="index.html"/>
+        <link rel="next" title="Python Bindings" href="Python-API.html"/>
+        <link rel="prev" title="Code Formatting" href="Code-Formatting.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> EXOTica
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing EXOTica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">EXOTica overview</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart_python.html">Quickstart: Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart_cpp.html">Quickstart: C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_exotica_cpp.html">Solving planning problems in c++</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="own_robot.html">Creating a planner package for your own robot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initialization.html">Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_initialization.html">Manual Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="XML.html">XML Initialization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="XML-Parsing.html">XML Parsing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Common-Initialization-Step.html">Common Initialization Step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Setting-up-ROSlaunch.html">Setting up ROSlaunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Setting-up-problems-and-solvers.html">Setting up Problems and Solvers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced/task_space_vector.html">Task space vector handling</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Task_maps.html">Task Maps</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Code-Formatting.html">Code Formatting</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Code Styleguide and Naming Convention</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#packages-files-and-directories">Packages, files and directories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#c">C++</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#formatting">Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#python">Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Python-API.html">Python Bindings</a></li>
+<li class="toctree-l1"><a class="reference external" href="./doxygen_cpp/index.html#http://">Doxygen C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Documentation.html">Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EXOTica</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Code Styleguide and Naming Convention</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="code-styleguide-and-naming-convention">
+<h1>Code Styleguide and Naming Convention<a class="headerlink" href="#code-styleguide-and-naming-convention" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="packages-files-and-directories">
+<h2>Packages, files and directories<a class="headerlink" href="#packages-files-and-directories" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Package names in lower case with underscores and exotica prefix:</li>
+</ul>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">exotica</span>
+<span class="n">exotica_python</span>
+<span class="n">exotica_examples</span>
+<span class="n">exotica_core_taskmaps</span>
+<span class="n">exotica_aico_solver</span>
+<span class="n">exotica_ik_solver</span>
+<span class="n">exotica_collision_scene_fcl</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul>
+<li><p class="first">All solver packages with <code class="docutils literal"><span class="pre">_solver</span></code> suffix.</p>
+</li>
+<li><p class="first">All task map packages with <code class="docutils literal"><span class="pre">_taskmaps</span></code> suffix (or <code class="docutils literal"><span class="pre">_taskmap</span></code> if it contains only a single task map).</p>
+</li>
+<li><p class="first">File names: <code class="docutils literal"><span class="pre">with_underscores.cpp</span></code>, <code class="docutils literal"><span class="pre">with_underscores.h</span></code>, <code class="docutils literal"><span class="pre">with_underscores.py</span></code> (do not use <a href="#id1"><span class="problematic" id="id2">*</span></a>.cc, <a href="#id3"><span class="problematic" id="id4">*</span></a>.hpp, … file types)</p>
+</li>
+<li><p class="first">Directory structure:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">package_name</span>\
+<span class="n">package_name</span>\<span class="n">launch</span>\ <span class="p">(</span><span class="o">*.</span><span class="n">launch</span><span class="p">)</span>
+<span class="n">package_name</span>\<span class="n">src</span>\ <span class="p">(</span><span class="o">*.</span><span class="n">cpp</span><span class="p">)</span>
+<span class="n">package_name</span>\<span class="n">include</span>\<span class="n">package_name</span>\ <span class="p">(</span><span class="o">*.</span><span class="n">h</span><span class="p">)</span>
+<span class="n">package_name</span>\<span class="n">scripts</span>\ <span class="p">(</span><span class="o">*.</span><span class="n">py</span> <span class="o">-</span> <span class="k">with</span> <span class="n">correct</span> <span class="n">shebang</span> <span class="ow">and</span> <span class="n">without</span> <span class="n">file</span> <span class="n">endings</span><span class="p">)</span>
+<span class="n">package_name</span>\<span class="n">init</span>\ <span class="p">(</span><span class="o">*.</span><span class="ow">in</span><span class="p">)</span>
+<span class="n">package_name</span>\<span class="n">cmake</span>\ <span class="p">(</span><span class="o">*.</span><span class="n">cmake</span> <span class="ow">and</span> <span class="n">supporting</span> <span class="n">scripts</span><span class="p">)</span>
+<span class="n">package_name</span>\<span class="n">doc</span>\ <span class="p">(</span><span class="n">doxygen</span> <span class="ow">and</span> <span class="n">other</span> <span class="n">files</span><span class="p">)</span>
+<span class="n">package_name</span>\<span class="n">resources</span>\ <span class="p">(</span><span class="n">urdf</span><span class="o">/</span><span class="n">srdf</span><span class="o">/</span><span class="n">meshes</span><span class="o">/</span><span class="n">scenes</span><span class="o">/</span><span class="n">trajectories</span><span class="o">/...</span><span class="p">)</span>
+<span class="n">package_name</span>\<span class="n">test</span>\ <span class="p">(</span><span class="n">C</span><span class="o">++/</span><span class="n">python</span> <span class="n">test</span> <span class="n">scripts</span><span class="p">)</span>
+<span class="n">package_name</span>\<span class="n">test</span>\<span class="n">resources</span>\ <span class="p">(</span><span class="n">test</span> <span class="n">resources</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>For files in <code class="docutils literal"><span class="pre">scripts/</span></code>, if they are Python file:</p>
+<ul class="simple">
+<li>Make the script executable (<code class="docutils literal"><span class="pre">chmod</span> <span class="pre">+x</span> <span class="pre">filename</span></code>).</li>
+<li>Add an appropriate shebang.</li>
+<li>Do not include the file ending.</li>
+</ul>
+</div>
+<div class="section" id="c">
+<h2>C++<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h2>
+<p>We follow the <a class="reference external" href="https://google.github.io/styleguide/cppguide.html#Naming">Google C++ style guide</a> with minor amendments (cf. file naming above). A good reference on notation terminology is the <a class="reference external" href="https://drake.mit.edu/doxygen_cxx/group__multibody__notation.html">Drake style guide</a>.</p>
+<p>Where the Google style guide leaves multiple options, here are our choices:</p>
+<ul class="simple">
+<li>Use <code class="docutils literal"><span class="pre">override</span></code> instead of <code class="docutils literal"><span class="pre">virtual</span></code> when overriding a function in a child class.</li>
+<li>Order output parameters after inputs if returning values via arguments.</li>
+<li>Avoid boost.</li>
+<li>Always use C++11.</li>
+<li>Type names: <code class="docutils literal"><span class="pre">CamelCasedWithFirstCapitalLetter</span></code></li>
+<li>Variable names: <code class="docutils literal"><span class="pre">with_underscores</span></code></li>
+<li>Member variables: <code class="docutils literal"><span class="pre">with_underscores_and_trailing_underscore_</span></code></li>
+<li>Struct data members: <code class="docutils literal"><span class="pre">with_underscores</span></code></li>
+<li>Constants: <code class="docutils literal"><span class="pre">kCamelCasedWithPrefix</span></code></li>
+<li>Function names: <code class="docutils literal"><span class="pre">CamelCasedWithFirstCapitalLetter</span></code></li>
+<li>Namespace names (always single word): <code class="docutils literal"><span class="pre">lowercase</span></code></li>
+<li>Enum names: <code class="docutils literal"><span class="pre">CamelCasedWithFirstCapitalLetter</span></code></li>
+<li>Enum data members: <code class="docutils literal"><span class="pre">ALL_CAPS</span></code></li>
+<li>Macro names: <code class="docutils literal"><span class="pre">ALL_CAPS</span></code></li>
+<li>Comments: <code class="docutils literal"><span class="pre">//</span> <span class="pre">always</span> <span class="pre">use</span> <span class="pre">double</span> <span class="pre">slash</span></code></li>
+<li>File comments - include author, copyright, and license</li>
+<li>File/class/function/variable comments: <code class="docutils literal"><span class="pre">///</span> <span class="pre">always</span> <span class="pre">use</span> <span class="pre">doxygen</span> <span class="pre">documentation</span> <span class="pre">style</span> <span class="pre">comments</span></code></li>
+<li>Implementation comments: <code class="docutils literal"><span class="pre">//</span> <span class="pre">always</span> <span class="pre">use</span> <span class="pre">regular</span> <span class="pre">double</span> <span class="pre">slash</span> <span class="pre">comments</span> <span class="pre">on</span> <span class="pre">a</span> <span class="pre">separate</span> <span class="pre">line</span></code></li>
+<li>TODO: <code class="docutils literal"><span class="pre">//</span> <span class="pre">TODO(githubusername</span> <span class="pre">or</span> <span class="pre">email)</span> <span class="pre">use</span> <span class="pre">comments</span> <span class="pre">with</span> <span class="pre">enough</span> <span class="pre">detail</span> <span class="pre">-</span> <span class="pre">the</span> <span class="pre">name</span> <span class="pre">references</span> <span class="pre">who</span> <span class="pre">added</span> <span class="pre">it</span> <span class="pre">or</span> <span class="pre">who</span> <span class="pre">is</span> <span class="pre">responsible</span> <span class="pre">for</span> <span class="pre">fixing</span> <span class="pre">it</span></code></li>
+</ul>
+<div class="section" id="formatting">
+<h3>Formatting<a class="headerlink" href="#formatting" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>No line length limit (use your own judgment for readability).</li>
+<li>Use the provided clang-format – cf. <a class="reference internal" href="Code-Formatting.html#code-formatting"><span class="std std-ref">Code Formatting</span></a>.</li>
+<li>Use UTF-8 encoding.</li>
+<li>Use 4 spaces instead of tabs.</li>
+<li>Opening <code class="docutils literal"><span class="pre">{</span></code> on a new line on the same level as the conditional/function/loop and the closing brace.</li>
+<li>Use vertical white space to separate code blocks/declarations.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Packages/Modules: Short lower case (avoid underscores), e.g., <code class="docutils literal"><span class="pre">pyexotica</span></code></li>
+<li>Class names: <code class="docutils literal"><span class="pre">CamelCased</span></code></li>
+<li>Function and variable names: <code class="docutils literal"><span class="pre">lower_case_with_underscores</span></code></li>
+<li>Non-public members: <code class="docutils literal"><span class="pre">_lower_case_with_leading_underscore</span></code></li>
+<li>Constants: <code class="docutils literal"><span class="pre">ALL_CAPS</span></code></li>
+<li>Getters/setters: always replace with attributes</li>
+<li>Always include explicit exports (<code class="docutils literal"><span class="pre">__all__</span></code>)</li>
+<li>Apply <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#naming-conventions">PEP8</a> formatting</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Python-API.html" class="btn btn-neutral float-right" title="Python Bindings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Code-Formatting.html" class="btn btn-neutral" title="Code Formatting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vladimir Ivan, Yiming Yang, Wolfgang Merkt, Michael Camilleri, Sethu Vijayakumar - and contributors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'5.0-beta1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
