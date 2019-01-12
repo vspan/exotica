@@ -59,4 +59,7 @@
   <class name="exotica/LookAt" type="exotica::LookAt" base_class_type="exotica::TaskMap">
     <description>Looks at a target point by penalizing the vector which defines the orthogonal projection onto a defined line in the end-effector frame.</description>
   </class>
+  <class name="exotica/AvoidLookAt" type="exotica::AvoidLookAt" base_class_type="exotica::TaskMap">
+    <description>Avoids looking at given target points. This can only be used as an inequality constraint.</description>
+  </class>
 </library>
