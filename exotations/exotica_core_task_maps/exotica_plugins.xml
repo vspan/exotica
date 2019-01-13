@@ -62,4 +62,7 @@
   <class name="exotica/AvoidLookAt" type="exotica::AvoidLookAt" base_class_type="exotica::TaskMap">
     <description>Avoids looking at given target points. This can only be used as an inequality constraint.</description>
   </class>
+  <class name="exotica/LookAtConstraint" type="exotica::LookAtConstraint" base_class_type="exotica::TaskMap">
+    <description>Provides constraint for look_at task map.</description>
+  </class>  
 </library>

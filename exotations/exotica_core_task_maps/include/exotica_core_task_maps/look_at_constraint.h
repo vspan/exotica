@@ -27,40 +27,28 @@
 // POSSIBILITY OF SUCH DAMAGE.
 //
 
-#ifndef EXOTICA_CORE_TASK_MAPS_AVOIDLOOKAT_H_
-#define EXOTICA_CORE_TASK_MAPS_AVOIDLOOKAT_H_
+#ifndef EXOTICA_CORE_TASK_MAPS_LOOKATCONSTRAINT_H_
+#define EXOTICA_CORE_TASK_MAPS_LOOKATCONSTRAINT_H_
 
 #include <exotica_core/task_map.h>
 
-#include <exotica_core_task_maps/avoid_look_at_initializer.h>
+#include <exotica_core_task_maps/look_at_constraint_initializer.h>
 
 namespace exotica
 {
-/// \class AvoidLookAt
-///
-/// \ingroup TaskMap
-///
-/// \brief Brief description here.
-/// Longer descr here.
-///
-/// \image (see look_at.h to see example of image)
-///
-/// See look_at.h for latex examples. 
-///  
-class AvoidLookAt : public TaskMap, public Instantiable<AvoidLookAtInitializer>
+class LookAtConstraint : public TaskMap, public Instantiable<LookAtConstraintInitializer>
 {
 public:
-    AvoidLookAt();
-    virtual ~AvoidLookAt();
+    LookAtConstraint();
+    virtual ~LookAtConstraint();
 
-    void Instantiate(AvoidLookAtInitializer& init) override;
+    void Instantiate(LookAtConstraintInitializer& init) override;
     void Update(Eigen::VectorXdRefConst x, Eigen::VectorXdRef phi) override;
     void Update(Eigen::VectorXdRefConst x, Eigen::VectorXdRef phi, Eigen::MatrixXdRef jacobian) override;
     int TaskSpaceDim() override;
 
 private:
-    int n_objects_;  ///< Number of objects.
-  Eigen::VectorXd radii2_; ///< The square of each object radii. 
+    int n_;           ///< Dimension of the task space.
 };
 }  // namespace exotica
 

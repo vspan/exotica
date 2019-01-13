@@ -32,6 +32,7 @@ AddInitializer(
   joint_jerk_backward_difference
   look_at
   avoid_look_at
+  look_at_constraint
 )
 GenInitializers()
 
@@ -68,6 +69,7 @@ set(SOURCES
     src/joint_jerk_backward_difference.cpp
     src/look_at.cpp
     src/avoid_look_at.cpp
+    src/look_at_constraint.cpp
 )
 
 add_library(${PROJECT_NAME} ${SOURCES})
