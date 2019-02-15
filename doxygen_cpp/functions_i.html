@@ -110,6 +110,7 @@ $(function() {
 <li>init_
 : <a class="el" href="classexotica_1_1CenterOfMass.html#aef7f2132aa737139f096e972a9bcc4e9">exotica::CenterOfMass</a>
 , <a class="el" href="classexotica_1_1CollisionCheck.html#ac21be27c906e36a9fccf2affc14a7dff">exotica::CollisionCheck</a>
+, <a class="el" href="classexotica_1_1DynamicTimeIndexedShootingProblem.html#ad35c46ea803306159e30b9d36e41d1e1">exotica::DynamicTimeIndexedShootingProblem</a>
 , <a class="el" href="classexotica_1_1EffAxisAlignment.html#a21a8f5c7f309114c6ab84e041f2a8c54">exotica::EffAxisAlignment</a>
 , <a class="el" href="classexotica_1_1JointAccelerationBackwardDifference.html#a78b1aab1f28e8a050d29494735586cc5">exotica::JointAccelerationBackwardDifference</a>
 , <a class="el" href="classexotica_1_1JointJerkBackwardDifference.html#a3deaab65f537cc5beed668ea08519ed6">exotica::JointJerkBackwardDifference</a>
@@ -221,6 +222,7 @@ $(function() {
 , <a class="el" href="classexotica_1_1CenterOfMass.html#a822c73214f2e1806d1be54ed3b6840b2">exotica::CenterOfMass</a>
 , <a class="el" href="classexotica_1_1CollisionCheck.html#ac3bf6ff695f676d8eb5033d195faf45e">exotica::CollisionCheck</a>
 , <a class="el" href="classexotica_1_1Distance.html#a78ba155b97174620c4a4cb5203bb7577">exotica::Distance</a>
+, <a class="el" href="classexotica_1_1DynamicTimeIndexedShootingProblem.html#a172c64596564241d1ccb785bbbea417d">exotica::DynamicTimeIndexedShootingProblem</a>
 , <a class="el" href="classexotica_1_1EffAxisAlignment.html#a2d08cfb852da6b5aa1f7178db78bb1bd">exotica::EffAxisAlignment</a>
 , <a class="el" href="classexotica_1_1EffFrame.html#a14f15594f6c8097685c11a7c9b72ffbe">exotica::EffFrame</a>
 , <a class="el" href="classexotica_1_1EffOrientation.html#abcb3b47c773ea1012091670b47ffd8ac">exotica::EffOrientation</a>
@@ -243,6 +245,7 @@ $(function() {
 , <a class="el" href="classexotica_1_1LBTRRTSolver.html#a64b4cd6c53f73773015cb2deb81b1267">exotica::LBTRRTSolver</a>
 , <a class="el" href="classexotica_1_1LevenbergMarquardtSolver.html#a2f71305803d01d601feba2e9447669dc">exotica::LevenbergMarquardtSolver</a>
 , <a class="el" href="classexotica_1_1LookAt.html#a7f658c5ffa37f96c2e47cb9cb43a8d1d">exotica::LookAt</a>
+, <a class="el" href="classexotica_1_1Manipulability.html#a020e2958b1eeb28e77ed260978ef4b7e">exotica::Manipulability</a>
 , <a class="el" href="classexotica_1_1PointToLine.html#a25345b3bb90a761afd65e800a9d86eb1">exotica::PointToLine</a>
 , <a class="el" href="classexotica_1_1PointToPlane.html#ade4f9ddbda9b59536f2044e92e768c1b">exotica::PointToPlane</a>
 , <a class="el" href="classexotica_1_1PRMSolver.html#a2333a1a70503dde464e157f679ad2228">exotica::PRMSolver</a>
@@ -269,8 +272,14 @@ $(function() {
 : <a class="el" href="classexotica_1_1Instantiable.html#af439c3f2dd803f4397015a369293e65e">exotica::Instantiable&lt; C &gt;</a>
 , <a class="el" href="classexotica_1_1InstantiableBase.html#aecee2b2a007405c7b4c37c1042f602bc">exotica::InstantiableBase</a>
 </li>
-<li>InstatiateObject()
-: <a class="el" href="classexotica_1_1Object.html#a216aecd7ee95448aa535fd7009869202">exotica::Object</a>
+<li>InstantiateObject()
+: <a class="el" href="classexotica_1_1Object.html#a081338253532f0a2d0411ec74261abee">exotica::Object</a>
+</li>
+<li>Integrate()
+: <a class="el" href="classexotica_1_1AbstractDynamicsSolver.html#a6b91d44acd0aafa1c6f1da6abdf039bc">exotica::AbstractDynamicsSolver&lt; T, NX, NU &gt;</a>
+</li>
+<li>integrator_
+: <a class="el" href="classexotica_1_1AbstractDynamicsSolver.html#a48a9ec504639a8801dab3afbcda0affa">exotica::AbstractDynamicsSolver&lt; T, NX, NU &gt;</a>
 </li>
 <li>InteractionMesh()
 : <a class="el" href="classexotica_1_1InteractionMesh.html#a35d9910e7f6bda2b80d7f7f11dd8975d">exotica::InteractionMesh</a>
@@ -301,7 +310,7 @@ $(function() {
 : <a class="el" href="classexotica_1_1SamplingProblem.html#a51940479067dd7493952a56ecb2df6d0">exotica::SamplingProblem</a>
 </li>
 <li>IsControlled()
-: <a class="el" href="classexotica_1_1KinematicTree.html#ace8e69bd5ff0f66f8d74269f985f211e">exotica::KinematicTree</a>
+: <a class="el" href="classexotica_1_1KinematicTree.html#aef0db5899262fe6192021dfb06e25709">exotica::KinematicTree</a>
 </li>
 <li>IsControlledLink()
 : <a class="el" href="classexotica_1_1KinematicTree.html#a089d33ff0be4faf17bcf496a419b4626">exotica::KinematicTree</a>
@@ -335,8 +344,8 @@ $(function() {
 , <a class="el" href="classexotica_1_1EndPoseProblem.html#a3a29af2902f04e755e2b89ab6854bbbd">exotica::EndPoseProblem</a>
 </li>
 <li>isValid()
-: <a class="el" href="classexotica_1_1OMPLStateValidityChecker.html#a8909435f7cb699b733569bed98570db9">exotica::OMPLStateValidityChecker</a>
-, <a class="el" href="classexotica_1_1OMPLTimeIndexedStateValidityChecker.html#a087eee9e0564ffa3cb18479344ed30e1">exotica::OMPLTimeIndexedStateValidityChecker</a>
+: <a class="el" href="classexotica_1_1OMPLStateValidityChecker.html#ad5d35a82a1777472dd510c9203894e2c">exotica::OMPLStateValidityChecker</a>
+, <a class="el" href="classexotica_1_1OMPLTimeIndexedStateValidityChecker.html#a1b9c928ef0c2ea7692127e668721c239">exotica::OMPLTimeIndexedStateValidityChecker</a>
 </li>
 <li>IsValid()
 : <a class="el" href="classexotica_1_1PlanningProblem.html#a90c31c93cc5459565c147de7293e2938">exotica::PlanningProblem</a>
@@ -353,7 +362,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 21:28:39 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 19:35:58 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

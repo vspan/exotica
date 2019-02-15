@@ -99,8 +99,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af121cd2fda1420cf2d11d247f4c934e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a626d54f6a6bfc4ff03cd9e2da622b185"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a626d54f6a6bfc4ff03cd9e2da622b185">GetDuration</a> ()</td></tr>
 <tr class="separator:a626d54f6a6bfc4ff03cd9e2da622b185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eb83b264e7b2025ae097c1b3a5f8ce9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a8eb83b264e7b2025ae097c1b3a5f8ce9">Update</a> (<a class="el" href="namespaceEigen.html#ad6c86a9df4dd2627a995a39eab0f9010">Eigen::VectorXdRefConst</a> <a class="el" href="classexotica_1_1TimeIndexedProblem.html#a9fa45bd7d9d0972133feee339803ccab">x</a>, int t)</td></tr>
-<tr class="separator:a8eb83b264e7b2025ae097c1b3a5f8ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224cd83650fa511bf59bc127502c51c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a224cd83650fa511bf59bc127502c51c0">Update</a> (<a class="el" href="namespaceEigen.html#ad6c86a9df4dd2627a995a39eab0f9010">Eigen::VectorXdRefConst</a> x_trajectory_in)</td></tr>
+<tr class="separator:a224cd83650fa511bf59bc127502c51c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad188629c1fc7e8462644b8a8fd1b0d23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#ad188629c1fc7e8462644b8a8fd1b0d23">Update</a> (<a class="el" href="namespaceEigen.html#ad6c86a9df4dd2627a995a39eab0f9010">Eigen::VectorXdRefConst</a> x_in, int t)</td></tr>
+<tr class="separator:ad188629c1fc7e8462644b8a8fd1b0d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a365792bce370ad5892eb240fb7ba0f49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a365792bce370ad5892eb240fb7ba0f49">IsValid</a> () override</td></tr>
 <tr class="separator:a365792bce370ad5892eb240fb7ba0f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c64da1bc859e6d5a8278cfafba94f85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a9c64da1bc859e6d5a8278cfafba94f85">GetInitialTrajectory</a> ()</td></tr>
@@ -137,34 +139,60 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac2a1abf74d5e97e7d0d9d311ea0376b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36aa1f75ff82e44b7a54ffab950270b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a36aa1f75ff82e44b7a54ffab950270b7">GetT</a> () const</td></tr>
 <tr class="separator:a36aa1f75ff82e44b7a54ffab950270b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba5fca7969e9b841c1dc56a68f5e2c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a8ba5fca7969e9b841c1dc56a68f5e2c7">SetT</a> (const int &amp;T_in)</td></tr>
-<tr class="separator:a8ba5fca7969e9b841c1dc56a68f5e2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453015fea282286d5bed7ad3ddab63f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a453015fea282286d5bed7ad3ddab63f6">SetT</a> (const int T_in)</td></tr>
+<tr class="separator:a453015fea282286d5bed7ad3ddab63f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00e1988e8e1439a0424f1fd5bc34ebb1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a00e1988e8e1439a0424f1fd5bc34ebb1">GetTau</a> () const</td></tr>
 <tr class="separator:a00e1988e8e1439a0424f1fd5bc34ebb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a527d64ff8340f12ee8f06edbd28d8359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a527d64ff8340f12ee8f06edbd28d8359">SetTau</a> (const double &amp;tau_in)</td></tr>
-<tr class="separator:a527d64ff8340f12ee8f06edbd28d8359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8878a71dde5302da4d2cc2c9f48a443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#aa8878a71dde5302da4d2cc2c9f48a443">SetTau</a> (const double tau_in)</td></tr>
+<tr class="separator:aa8878a71dde5302da4d2cc2c9f48a443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b9c7f12bf30a1be3ea519dcf98cd409"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a9b9c7f12bf30a1be3ea519dcf98cd409">GetScalarTaskCost</a> (int t)</td></tr>
+<tr class="memdesc:a9b9c7f12bf30a1be3ea519dcf98cd409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scalar task cost at timestep t.  <a href="#a9b9c7f12bf30a1be3ea519dcf98cd409">More...</a><br /></td></tr>
 <tr class="separator:a9b9c7f12bf30a1be3ea519dcf98cd409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac25ffbbfa5135c3a464895d58a8e1a5b"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#ac25ffbbfa5135c3a464895d58a8e1a5b">GetScalarTaskJacobian</a> (int t)</td></tr>
+<tr class="memdesc:ac25ffbbfa5135c3a464895d58a8e1a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Jacobian of the scalar task cost at timestep t.  <a href="#ac25ffbbfa5135c3a464895d58a8e1a5b">More...</a><br /></td></tr>
 <tr class="separator:ac25ffbbfa5135c3a464895d58a8e1a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2db146149f7cd470730bbb219dcc76a5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a2db146149f7cd470730bbb219dcc76a5">GetScalarTransitionCost</a> (int t)</td></tr>
+<tr class="memdesc:a2db146149f7cd470730bbb219dcc76a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scalar transition cost (x^T*W*x) at timestep t.  <a href="#a2db146149f7cd470730bbb219dcc76a5">More...</a><br /></td></tr>
 <tr class="separator:a2db146149f7cd470730bbb219dcc76a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab53f0959989730677a42e3faa8bf039f"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#ab53f0959989730677a42e3faa8bf039f">GetScalarTransitionJacobian</a> (int t)</td></tr>
+<tr class="memdesc:ab53f0959989730677a42e3faa8bf039f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Jacobian of the transition cost at timestep t.  <a href="#ab53f0959989730677a42e3faa8bf039f">More...</a><br /></td></tr>
 <tr class="separator:ab53f0959989730677a42e3faa8bf039f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005b501ff54a36f3c14d739273019a52"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a005b501ff54a36f3c14d739273019a52">GetCost</a> ()</td></tr>
+<tr class="memdesc:a005b501ff54a36f3c14d739273019a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scalar cost for the entire trajectory (both task and transition cost).  <a href="#a005b501ff54a36f3c14d739273019a52">More...</a><br /></td></tr>
+<tr class="separator:a005b501ff54a36f3c14d739273019a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7298a8b3da2229bda51d3eec0769650"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#ac7298a8b3da2229bda51d3eec0769650">GetCostJacobian</a> ()</td></tr>
+<tr class="memdesc:ac7298a8b3da2229bda51d3eec0769650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Jacobian of the scalar cost over the entire trajectory (Jacobian of GetCost).  <a href="#ac7298a8b3da2229bda51d3eec0769650">More...</a><br /></td></tr>
+<tr class="separator:ac7298a8b3da2229bda51d3eec0769650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc32aa9025fec2ccc4722acbffff9fb9"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#abc32aa9025fec2ccc4722acbffff9fb9">GetEquality</a> ()</td></tr>
+<tr class="memdesc:abc32aa9025fec2ccc4722acbffff9fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the equality constraint values for the entire trajectory.  <a href="#abc32aa9025fec2ccc4722acbffff9fb9">More...</a><br /></td></tr>
+<tr class="separator:abc32aa9025fec2ccc4722acbffff9fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74aa3efc630b425b2800a2256b0cc69"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#ac74aa3efc630b425b2800a2256b0cc69">GetInequality</a> ()</td></tr>
+<tr class="memdesc:ac74aa3efc630b425b2800a2256b0cc69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the inequality constraint values for the entire trajectory.  <a href="#ac74aa3efc630b425b2800a2256b0cc69">More...</a><br /></td></tr>
+<tr class="separator:ac74aa3efc630b425b2800a2256b0cc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5264f8c2b6ebc233eb7834f40fcc7476"><td class="memItemLeft" align="right" valign="top">Eigen::SparseMatrix&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a5264f8c2b6ebc233eb7834f40fcc7476">GetEqualityJacobian</a> ()</td></tr>
+<tr class="memdesc:a5264f8c2b6ebc233eb7834f40fcc7476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sparse Jacobian matrix of the equality constraints over the entire trajectory.  <a href="#a5264f8c2b6ebc233eb7834f40fcc7476">More...</a><br /></td></tr>
+<tr class="separator:a5264f8c2b6ebc233eb7834f40fcc7476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c70f3cfe78cb7165ac0175dfb2e1981"><td class="memItemLeft" align="right" valign="top">Eigen::SparseMatrix&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a3c70f3cfe78cb7165ac0175dfb2e1981">GetInequalityJacobian</a> ()</td></tr>
+<tr class="memdesc:a3c70f3cfe78cb7165ac0175dfb2e1981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sparse Jacobian matrix of the inequality constraints over the entire trajectory.  <a href="#a3c70f3cfe78cb7165ac0175dfb2e1981">More...</a><br /></td></tr>
+<tr class="separator:a3c70f3cfe78cb7165ac0175dfb2e1981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cc5b0cf53ecb0ea074ec5f65ecdb7a2"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a1cc5b0cf53ecb0ea074ec5f65ecdb7a2">GetEquality</a> (int t)</td></tr>
+<tr class="memdesc:a1cc5b0cf53ecb0ea074ec5f65ecdb7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the equality constraints at timestep t.  <a href="#a1cc5b0cf53ecb0ea074ec5f65ecdb7a2">More...</a><br /></td></tr>
 <tr class="separator:a1cc5b0cf53ecb0ea074ec5f65ecdb7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02bd9d3793265ea8cfbeba2d706312a4"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a02bd9d3793265ea8cfbeba2d706312a4">GetEqualityJacobian</a> (int t)</td></tr>
+<tr class="memdesc:a02bd9d3793265ea8cfbeba2d706312a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Jacobian of the equality constraints at timestep t.  <a href="#a02bd9d3793265ea8cfbeba2d706312a4">More...</a><br /></td></tr>
 <tr class="separator:a02bd9d3793265ea8cfbeba2d706312a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a911d869cef782c117fe52325cbfedc"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a7a911d869cef782c117fe52325cbfedc">GetInequality</a> (int t)</td></tr>
+<tr class="memdesc:a7a911d869cef782c117fe52325cbfedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the inequality constraints at timestep t.  <a href="#a7a911d869cef782c117fe52325cbfedc">More...</a><br /></td></tr>
 <tr class="separator:a7a911d869cef782c117fe52325cbfedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b4cd61e4e7bc5f707f5e05262efd57c"><td class="memItemLeft" align="right" valign="top">Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a6b4cd61e4e7bc5f707f5e05262efd57c">GetInequalityJacobian</a> (int t)</td></tr>
+<tr class="memdesc:a6b4cd61e4e7bc5f707f5e05262efd57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Jacobian of the inequality constraints at timestep t.  <a href="#a6b4cd61e4e7bc5f707f5e05262efd57c">More...</a><br /></td></tr>
 <tr class="separator:a6b4cd61e4e7bc5f707f5e05262efd57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab68c792d0953a8110427aff581cc7ec1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#ab68c792d0953a8110427aff581cc7ec1">GetJointVelocityLimit</a> ()</td></tr>
-<tr class="separator:ab68c792d0953a8110427aff581cc7ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a522a7279261817a6b4c415e6c9149d83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a522a7279261817a6b4c415e6c9149d83">SetJointVelocityLimit</a> (const double &amp;qdot_max_in)</td></tr>
-<tr class="separator:a522a7279261817a6b4c415e6c9149d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1279c119ac2288741c863aae30ab7b0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#ad1279c119ac2288741c863aae30ab7b0">GetXdiffMax</a> ()</td></tr>
-<tr class="separator:ad1279c119ac2288741c863aae30ab7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c8ef475ac718adf66a90c3f30a44e2"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#af3c8ef475ac718adf66a90c3f30a44e2">GetJointVelocityLimits</a> () const</td></tr>
+<tr class="separator:af3c8ef475ac718adf66a90c3f30a44e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9d64db3c863468cf03b7985cfc41c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a6f9d64db3c863468cf03b7985cfc41c8">SetJointVelocityLimits</a> (const Eigen::VectorXd &amp;qdot_max_in)</td></tr>
+<tr class="separator:a6f9d64db3c863468cf03b7985cfc41c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f51ed8fb295ad27ba6105c6d30262d"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a15f51ed8fb295ad27ba6105c6d30262d">GetXdiffMax</a> () const</td></tr>
+<tr class="separator:a15f51ed8fb295ad27ba6105c6d30262d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classexotica_1_1PlanningProblem"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classexotica_1_1PlanningProblem')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classexotica_1_1PlanningProblem.html">exotica::PlanningProblem</a></td></tr>
 <tr class="memitem:a944777c5d630bfabcbf68956418a811c inherit pub_methods_classexotica_1_1PlanningProblem"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1PlanningProblem.html#a944777c5d630bfabcbf68956418a811c">PlanningProblem</a> ()</td></tr>
 <tr class="separator:a944777c5d630bfabcbf68956418a811c inherit pub_methods_classexotica_1_1PlanningProblem"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,8 +242,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b1a479d989b9acd18f42e603b1ce67d inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac28824c5d57b0f28fea7a487d211a4b6 inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#ac28824c5d57b0f28fea7a487d211a4b6">GetObjectName</a> ()</td></tr>
 <tr class="separator:ac28824c5d57b0f28fea7a487d211a4b6 inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216aecd7ee95448aa535fd7009869202 inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a216aecd7ee95448aa535fd7009869202">InstatiateObject</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
-<tr class="separator:a216aecd7ee95448aa535fd7009869202 inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081338253532f0a2d0411ec74261abee inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a081338253532f0a2d0411ec74261abee">InstantiateObject</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
+<tr class="separator:a081338253532f0a2d0411ec74261abee inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classexotica_1_1Instantiable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classexotica_1_1Instantiable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classexotica_1_1Instantiable.html">exotica::Instantiable&lt; TimeIndexedProblemInitializer &gt;</a></td></tr>
 <tr class="memitem:af439c3f2dd803f4397015a369293e65e inherit pub_methods_classexotica_1_1Instantiable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Instantiable.html#af439c3f2dd803f4397015a369293e65e">InstantiateInternal</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
 <tr class="separator:af439c3f2dd803f4397015a369293e65e inherit pub_methods_classexotica_1_1Instantiable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,6 +278,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8a9b563fac1f54441cbb3031ef7d2359"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceexotica.html#a09d6aebee2e82adbe8c7d92f811d3950">Hessian</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a8a9b563fac1f54441cbb3031ef7d2359">hessian</a></td></tr>
 <tr class="separator:a8a9b563fac1f54441cbb3031ef7d2359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa45bd7d9d0972133feee339803ccab"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a9fa45bd7d9d0972133feee339803ccab">x</a></td></tr>
+<tr class="memdesc:a9fa45bd7d9d0972133feee339803ccab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current internal problem state.  <a href="#a9fa45bd7d9d0972133feee339803ccab">More...</a><br /></td></tr>
 <tr class="separator:a9fa45bd7d9d0972133feee339803ccab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91170d7cd32b159ae96d6a0f9c1c3a67"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a91170d7cd32b159ae96d6a0f9c1c3a67">xdiff</a></td></tr>
 <tr class="separator:a91170d7cd32b159ae96d6a0f9c1c3a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,19 +312,19 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:acd9e2996507473c3a3e25488f251dd5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#acd9e2996507473c3a3e25488f251dd5f">T_</a></td></tr>
+<tr class="memitem:acd9e2996507473c3a3e25488f251dd5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#acd9e2996507473c3a3e25488f251dd5f">T_</a> = 0</td></tr>
 <tr class="memdesc:acd9e2996507473c3a3e25488f251dd5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of time steps.  <a href="#acd9e2996507473c3a3e25488f251dd5f">More...</a><br /></td></tr>
 <tr class="separator:acd9e2996507473c3a3e25488f251dd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba34f446cdb01347f0136e7f718ec5a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a3ba34f446cdb01347f0136e7f718ec5a">tau_</a></td></tr>
+<tr class="memitem:a3ba34f446cdb01347f0136e7f718ec5a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a3ba34f446cdb01347f0136e7f718ec5a">tau_</a> = 0</td></tr>
 <tr class="memdesc:a3ba34f446cdb01347f0136e7f718ec5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time step duration.  <a href="#a3ba34f446cdb01347f0136e7f718ec5a">More...</a><br /></td></tr>
 <tr class="separator:a3ba34f446cdb01347f0136e7f718ec5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0fa03fe339076ff5e246ae1c6633872"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#ab0fa03fe339076ff5e246ae1c6633872">q_dot_max_</a></td></tr>
-<tr class="memdesc:ab0fa03fe339076ff5e246ae1c6633872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joint velocity limit (rad/s)  <a href="#ab0fa03fe339076ff5e246ae1c6633872">More...</a><br /></td></tr>
-<tr class="separator:ab0fa03fe339076ff5e246ae1c6633872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa13afe19e884fcb2fb417ce9a205770c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#aa13afe19e884fcb2fb417ce9a205770c">xdiff_max_</a></td></tr>
-<tr class="memdesc:aa13afe19e884fcb2fb417ce9a205770c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum change in the variables in a single timestep tau_. Gets set/updated via <a class="el" href="classexotica_1_1TimeIndexedProblem.html#a527d64ff8340f12ee8f06edbd28d8359">SetTau()</a>.  <a href="#aa13afe19e884fcb2fb417ce9a205770c">More...</a><br /></td></tr>
-<tr class="separator:aa13afe19e884fcb2fb417ce9a205770c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74783b129bbca003b0dfb8643a8d7fec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a74783b129bbca003b0dfb8643a8d7fec">w_scale_</a></td></tr>
+<tr class="memitem:abc848694490ada246ff6fa932cbea146"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#abc848694490ada246ff6fa932cbea146">q_dot_max_</a></td></tr>
+<tr class="memdesc:abc848694490ada246ff6fa932cbea146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joint velocity limit (rad/s)  <a href="#abc848694490ada246ff6fa932cbea146">More...</a><br /></td></tr>
+<tr class="separator:abc848694490ada246ff6fa932cbea146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7add2fe878d2c85f95275884ca34b1"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a6d7add2fe878d2c85f95275884ca34b1">xdiff_max_</a></td></tr>
+<tr class="memdesc:a6d7add2fe878d2c85f95275884ca34b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum change in the variables in a single timestep tau_. Gets set/updated via <a class="el" href="classexotica_1_1TimeIndexedProblem.html#aa8878a71dde5302da4d2cc2c9f48a443">SetTau()</a>.  <a href="#a6d7add2fe878d2c85f95275884ca34b1">More...</a><br /></td></tr>
+<tr class="separator:a6d7add2fe878d2c85f95275884ca34b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74783b129bbca003b0dfb8643a8d7fec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a74783b129bbca003b0dfb8643a8d7fec">w_scale_</a> = 1.0</td></tr>
 <tr class="memdesc:a74783b129bbca003b0dfb8643a8d7fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinematic system transition error covariance multiplier (constant throughout the trajectory)  <a href="#a74783b129bbca003b0dfb8643a8d7fec">More...</a><br /></td></tr>
 <tr class="separator:a74783b129bbca003b0dfb8643a8d7fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d141d58986680916c5c5911a6307e74"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1TimeIndexedProblem.html#a1d141d58986680916c5c5911a6307e74">initial_trajectory_</a></td></tr>
@@ -389,6 +418,44 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a005b501ff54a36f3c14d739273019a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005b501ff54a36f3c14d739273019a52">&#9670;&nbsp;</a></span>GetCost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double exotica::TimeIndexedProblem::GetCost </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the scalar cost for the entire trajectory (both task and transition cost). </p>
+
+</div>
+</div>
+<a id="ac7298a8b3da2229bda51d3eec0769650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7298a8b3da2229bda51d3eec0769650">&#9670;&nbsp;</a></span>GetCostJacobian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::VectorXd exotica::TimeIndexedProblem::GetCostJacobian </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Jacobian of the scalar cost over the entire trajectory (Jacobian of GetCost). </p>
+
+</div>
+</div>
 <a id="a626d54f6a6bfc4ff03cd9e2da622b185"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a626d54f6a6bfc4ff03cd9e2da622b185">&#9670;&nbsp;</a></span>GetDuration()</h2>
 
@@ -406,8 +473,27 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="abc32aa9025fec2ccc4722acbffff9fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc32aa9025fec2ccc4722acbffff9fb9">&#9670;&nbsp;</a></span>GetEquality() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::VectorXd exotica::TimeIndexedProblem::GetEquality </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the equality constraint values for the entire trajectory. </p>
+
+</div>
+</div>
 <a id="a1cc5b0cf53ecb0ea074ec5f65ecdb7a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cc5b0cf53ecb0ea074ec5f65ecdb7a2">&#9670;&nbsp;</a></span>GetEquality()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc5b0cf53ecb0ea074ec5f65ecdb7a2">&#9670;&nbsp;</a></span>GetEquality() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,10 +508,31 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the value of the equality constraints at timestep t. </p>
+
+</div>
+</div>
+<a id="a5264f8c2b6ebc233eb7834f40fcc7476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5264f8c2b6ebc233eb7834f40fcc7476">&#9670;&nbsp;</a></span>GetEqualityJacobian() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::SparseMatrix&lt; double &gt; exotica::TimeIndexedProblem::GetEqualityJacobian </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the sparse Jacobian matrix of the equality constraints over the entire trajectory. </p>
+
 </div>
 </div>
 <a id="a02bd9d3793265ea8cfbeba2d706312a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02bd9d3793265ea8cfbeba2d706312a4">&#9670;&nbsp;</a></span>GetEqualityJacobian()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02bd9d3793265ea8cfbeba2d706312a4">&#9670;&nbsp;</a></span>GetEqualityJacobian() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,6 +546,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the Jacobian of the equality constraints at timestep t. </p>
 
 </div>
 </div>
@@ -526,8 +635,27 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac74aa3efc630b425b2800a2256b0cc69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74aa3efc630b425b2800a2256b0cc69">&#9670;&nbsp;</a></span>GetInequality() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::VectorXd exotica::TimeIndexedProblem::GetInequality </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the inequality constraint values for the entire trajectory. </p>
+
+</div>
+</div>
 <a id="a7a911d869cef782c117fe52325cbfedc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a911d869cef782c117fe52325cbfedc">&#9670;&nbsp;</a></span>GetInequality()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a911d869cef782c117fe52325cbfedc">&#9670;&nbsp;</a></span>GetInequality() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,10 +670,31 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the value of the inequality constraints at timestep t. </p>
+
+</div>
+</div>
+<a id="a3c70f3cfe78cb7165ac0175dfb2e1981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c70f3cfe78cb7165ac0175dfb2e1981">&#9670;&nbsp;</a></span>GetInequalityJacobian() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::SparseMatrix&lt; double &gt; exotica::TimeIndexedProblem::GetInequalityJacobian </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the sparse Jacobian matrix of the inequality constraints over the entire trajectory. </p>
+
 </div>
 </div>
 <a id="a6b4cd61e4e7bc5f707f5e05262efd57c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4cd61e4e7bc5f707f5e05262efd57c">&#9670;&nbsp;</a></span>GetInequalityJacobian()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b4cd61e4e7bc5f707f5e05262efd57c">&#9670;&nbsp;</a></span>GetInequalityJacobian() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -559,6 +708,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the Jacobian of the inequality constraints at timestep t. </p>
 
 </div>
 </div>
@@ -579,8 +730,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ab68c792d0953a8110427aff581cc7ec1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab68c792d0953a8110427aff581cc7ec1">&#9670;&nbsp;</a></span>GetJointVelocityLimit()</h2>
+<a id="af3c8ef475ac718adf66a90c3f30a44e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c8ef475ac718adf66a90c3f30a44e2">&#9670;&nbsp;</a></span>GetJointVelocityLimits()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -589,10 +740,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double exotica::TimeIndexedProblem::GetJointVelocityLimit </td>
+          <td class="memname">Eigen::VectorXd exotica::TimeIndexedProblem::GetJointVelocityLimits </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -704,6 +855,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the scalar task cost at timestep t. </p>
+
 </div>
 </div>
 <a id="ac25ffbbfa5135c3a464895d58a8e1a5b"></a>
@@ -721,6 +874,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the Jacobian of the scalar task cost at timestep t. </p>
 
 </div>
 </div>
@@ -740,6 +895,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the scalar transition cost (x^T*W*x) at timestep t. </p>
+
 </div>
 </div>
 <a id="ab53f0959989730677a42e3faa8bf039f"></a>
@@ -757,6 +914,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the Jacobian of the transition cost at timestep t. </p>
 
 </div>
 </div>
@@ -810,8 +969,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad1279c119ac2288741c863aae30ab7b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1279c119ac2288741c863aae30ab7b0">&#9670;&nbsp;</a></span>GetXdiffMax()</h2>
+<a id="a15f51ed8fb295ad27ba6105c6d30262d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f51ed8fb295ad27ba6105c6d30262d">&#9670;&nbsp;</a></span>GetXdiffMax()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -820,10 +979,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double exotica::TimeIndexedProblem::GetXdiffMax </td>
+          <td class="memname">Eigen::VectorXd exotica::TimeIndexedProblem::GetXdiffMax </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1062,8 +1221,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a522a7279261817a6b4c415e6c9149d83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a522a7279261817a6b4c415e6c9149d83">&#9670;&nbsp;</a></span>SetJointVelocityLimit()</h2>
+<a id="a6f9d64db3c863468cf03b7985cfc41c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9d64db3c863468cf03b7985cfc41c8">&#9670;&nbsp;</a></span>SetJointVelocityLimits()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1072,9 +1231,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void exotica::TimeIndexedProblem::SetJointVelocityLimit </td>
+          <td class="memname">void exotica::TimeIndexedProblem::SetJointVelocityLimits </td>
           <td>(</td>
-          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramtype">const Eigen::VectorXd &amp;&#160;</td>
           <td class="paramname"><em>qdot_max_in</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1190,8 +1349,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ba5fca7969e9b841c1dc56a68f5e2c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ba5fca7969e9b841c1dc56a68f5e2c7">&#9670;&nbsp;</a></span>SetT()</h2>
+<a id="a453015fea282286d5bed7ad3ddab63f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453015fea282286d5bed7ad3ddab63f6">&#9670;&nbsp;</a></span>SetT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1199,7 +1358,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void exotica::TimeIndexedProblem::SetT </td>
           <td>(</td>
-          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>T_in</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1208,8 +1367,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a527d64ff8340f12ee8f06edbd28d8359"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a527d64ff8340f12ee8f06edbd28d8359">&#9670;&nbsp;</a></span>SetTau()</h2>
+<a id="aa8878a71dde5302da4d2cc2c9f48a443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8878a71dde5302da4d2cc2c9f48a443">&#9670;&nbsp;</a></span>SetTau()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1217,7 +1376,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void exotica::TimeIndexedProblem::SetTau </td>
           <td>(</td>
-          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>tau_in</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1226,8 +1385,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a8eb83b264e7b2025ae097c1b3a5f8ce9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8eb83b264e7b2025ae097c1b3a5f8ce9">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a224cd83650fa511bf59bc127502c51c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a224cd83650fa511bf59bc127502c51c0">&#9670;&nbsp;</a></span>Update() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1236,7 +1395,25 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void exotica::TimeIndexedProblem::Update </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceEigen.html#ad6c86a9df4dd2627a995a39eab0f9010">Eigen::VectorXdRefConst</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramname"><em>x_trajectory_in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad188629c1fc7e8462644b8a8fd1b0d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad188629c1fc7e8462644b8a8fd1b0d23">&#9670;&nbsp;</a></span>Update() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exotica::TimeIndexedProblem::Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceEigen.html#ad6c86a9df4dd2627a995a39eab0f9010">Eigen::VectorXdRefConst</a>&#160;</td>
+          <td class="paramname"><em>x_in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1505,8 +1682,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ab0fa03fe339076ff5e246ae1c6633872"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0fa03fe339076ff5e246ae1c6633872">&#9670;&nbsp;</a></span>q_dot_max_</h2>
+<a id="abc848694490ada246ff6fa932cbea146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc848694490ada246ff6fa932cbea146">&#9670;&nbsp;</a></span>q_dot_max_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1515,7 +1692,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double exotica::TimeIndexedProblem::q_dot_max_</td>
+          <td class="memname">Eigen::VectorXd exotica::TimeIndexedProblem::q_dot_max_</td>
         </tr>
       </table>
   </td>
@@ -1539,7 +1716,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int exotica::TimeIndexedProblem::T_</td>
+          <td class="memname">int exotica::TimeIndexedProblem::T_ = 0</td>
         </tr>
       </table>
   </td>
@@ -1563,7 +1740,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double exotica::TimeIndexedProblem::tau_</td>
+          <td class="memname">double exotica::TimeIndexedProblem::tau_ = 0</td>
         </tr>
       </table>
   </td>
@@ -1615,7 +1792,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double exotica::TimeIndexedProblem::w_scale_</td>
+          <td class="memname">double exotica::TimeIndexedProblem::w_scale_ = 1.0</td>
         </tr>
       </table>
   </td>
@@ -1641,6 +1818,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Current internal problem state. </p>
+
 </div>
 </div>
 <a id="a91170d7cd32b159ae96d6a0f9c1c3a67"></a>
@@ -1657,8 +1836,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa13afe19e884fcb2fb417ce9a205770c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa13afe19e884fcb2fb417ce9a205770c">&#9670;&nbsp;</a></span>xdiff_max_</h2>
+<a id="a6d7add2fe878d2c85f95275884ca34b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7add2fe878d2c85f95275884ca34b1">&#9670;&nbsp;</a></span>xdiff_max_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1667,7 +1846,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double exotica::TimeIndexedProblem::xdiff_max_</td>
+          <td class="memname">Eigen::VectorXd exotica::TimeIndexedProblem::xdiff_max_</td>
         </tr>
       </table>
   </td>
@@ -1677,18 +1856,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Maximum change in the variables in a single timestep tau_. Gets set/updated via <a class="el" href="classexotica_1_1TimeIndexedProblem.html#a527d64ff8340f12ee8f06edbd28d8359">SetTau()</a>. </p>
+<p>Maximum change in the variables in a single timestep tau_. Gets set/updated via <a class="el" href="classexotica_1_1TimeIndexedProblem.html#aa8878a71dde5302da4d2cc2c9f48a443">SetTau()</a>. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/wxm/dev/exotica_ws/src/exotica/exotica_core/include/exotica_core/problems/<a class="el" href="time__indexed__problem_8h_source.html">time_indexed_problem.h</a></li>
-<li>/home/wxm/dev/exotica_ws/src/exotica/exotica_core/src/problems/<a class="el" href="time__indexed__problem_8cpp.html">time_indexed_problem.cpp</a></li>
+<li>/home/wxm/tmp/exotica/exotica_core/include/exotica_core/problems/<a class="el" href="time__indexed__problem_8h_source.html">time_indexed_problem.h</a></li>
+<li>/home/wxm/tmp/exotica/exotica_core/src/problems/<a class="el" href="time__indexed__problem_8cpp.html">time_indexed_problem.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 21:28:34 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 19:35:55 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

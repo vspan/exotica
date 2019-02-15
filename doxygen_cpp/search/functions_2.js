@@ -32,10 +32,12 @@ var searchData=
   ['covp',['covp',['../classSinglePassMeanCovariance.html#a86f9a2f7a32872991f262bb737af8759',1,'SinglePassMeanCovariance']]],
   ['create',['Create',['../classexotica_1_1KinematicSolution.html#a09c60df31b366c42ee84d64c6a028dcd',1,'exotica::KinematicSolution']]],
   ['createcollisionscene',['CreateCollisionScene',['../classexotica_1_1Setup.html#a026c6b4d2a1f79c09078fc87871eb29e',1,'exotica::Setup']]],
+  ['createdynamicssolver',['CreateDynamicsSolver',['../classexotica_1_1Setup.html#a3d9ebc9bb1bf69cbab7fce41024d6cd3',1,'exotica::Setup']]],
   ['createinitializer',['CreateInitializer',['../pyexotica_8cpp.html#a657f96e83a8f40c9d2a4a305005d26d2',1,'pyexotica.cpp']]],
   ['createinstance',['CreateInstance',['../classexotica_1_1Factory.html#a1c69405862e3c7d011c8d35f8ee7f32b',1,'exotica::Factory']]],
   ['createmap',['CreateMap',['../classexotica_1_1Setup.html#addc6865c57aa4a07834e57dd0fb73dfe',1,'exotica::Setup::CreateMap(const std::string &amp;type, bool prepend=true)'],['../classexotica_1_1Setup.html#a6f4704a43f4596dd3a889f33c0762b48',1,'exotica::Setup::CreateMap(const Initializer &amp;init)']]],
   ['createproblem',['CreateProblem',['../classexotica_1_1Setup.html#ab68b4624f5044a30a63bea53d59516bf',1,'exotica::Setup::CreateProblem(const std::string &amp;type, bool prepend=true)'],['../classexotica_1_1Setup.html#a32e3d226e62be012f7268a91fc39b847',1,'exotica::Setup::CreateProblem(const Initializer &amp;init)']]],
+  ['createscene',['CreateScene',['../classexotica_1_1Setup.html#a462364f911c1092c8473f518bcf82fbf',1,'exotica::Setup']]],
   ['createsolver',['CreateSolver',['../classexotica_1_1Setup.html#ac67417af39c946541259aafcc3c2ef87',1,'exotica::Setup::CreateSolver(const std::string &amp;type, bool prepend=true)'],['../classexotica_1_1Setup.html#afd2352e71d7c6734efee944778434736',1,'exotica::Setup::CreateSolver(const Initializer &amp;init)']]],
   ['createstringioobject',['CreateStringIOObject',['../pyexotica_8cpp.html#ae00623899588c22825aad60158befa22',1,'pyexotica.cpp']]],
   ['cross',['cross',['../namespaceexotica.html#a293d06ef5df444419260c6b6253742f8',1,'exotica']]]

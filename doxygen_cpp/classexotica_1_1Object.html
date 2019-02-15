@@ -95,12 +95,13 @@ Inheritance diagram for exotica::Object:</div>
 <area href="classexotica_1_1OMPLSolver.html" alt="exotica::OMPLSolver&lt; SamplingProblem &gt;" shape="rect" coords="566,448,839,472"/>
 <area href="classexotica_1_1BoundedEndPoseProblem.html" title="Bound constrained end-pose problem implementation. " alt="exotica::BoundedEndPoseProblem" shape="rect" coords="1132,112,1405,136"/>
 <area href="classexotica_1_1BoundedTimeIndexedProblem.html" title="Bound constrained time-indexed problem. " alt="exotica::BoundedTimeIndexedProblem" shape="rect" coords="1132,168,1405,192"/>
-<area href="classexotica_1_1EndPoseProblem.html" title="Arbitrarily constrained end-pose problem implementation. " alt="exotica::EndPoseProblem" shape="rect" coords="1132,224,1405,248"/>
-<area href="classexotica_1_1SamplingProblem.html" alt="exotica::SamplingProblem" shape="rect" coords="1132,280,1405,304"/>
-<area href="classexotica_1_1TimeIndexedProblem.html" alt="exotica::TimeIndexedProblem" shape="rect" coords="1132,336,1405,360"/>
-<area href="classexotica_1_1TimeIndexedSamplingProblem.html" alt="exotica::TimeIndexedSamplingProblem" shape="rect" coords="1132,392,1405,416"/>
-<area href="classexotica_1_1UnconstrainedEndPoseProblem.html" alt="exotica::UnconstrainedEndPoseProblem" shape="rect" coords="1132,448,1405,472"/>
-<area href="classexotica_1_1UnconstrainedTimeIndexedProblem.html" alt="exotica::UnconstrainedTimeIndexedProblem" shape="rect" coords="1132,504,1405,528"/>
+<area href="classexotica_1_1DynamicTimeIndexedShootingProblem.html" alt="exotica::DynamicTimeIndexedShootingProblem" shape="rect" coords="1132,224,1405,248"/>
+<area href="classexotica_1_1EndPoseProblem.html" title="Arbitrarily constrained end-pose problem implementation. " alt="exotica::EndPoseProblem" shape="rect" coords="1132,280,1405,304"/>
+<area href="classexotica_1_1SamplingProblem.html" alt="exotica::SamplingProblem" shape="rect" coords="1132,336,1405,360"/>
+<area href="classexotica_1_1TimeIndexedProblem.html" alt="exotica::TimeIndexedProblem" shape="rect" coords="1132,392,1405,416"/>
+<area href="classexotica_1_1TimeIndexedSamplingProblem.html" alt="exotica::TimeIndexedSamplingProblem" shape="rect" coords="1132,448,1405,472"/>
+<area href="classexotica_1_1UnconstrainedEndPoseProblem.html" alt="exotica::UnconstrainedEndPoseProblem" shape="rect" coords="1132,504,1405,528"/>
+<area href="classexotica_1_1UnconstrainedTimeIndexedProblem.html" alt="exotica::UnconstrainedTimeIndexedProblem" shape="rect" coords="1132,560,1405,584"/>
 <area href="classexotica_1_1CenterOfMass.html" alt="exotica::CenterOfMass" shape="rect" coords="1981,112,2254,136"/>
 <area href="classexotica_1_1CollisionCheck.html" alt="exotica::CollisionCheck" shape="rect" coords="1981,168,2254,192"/>
 <area href="classexotica_1_1Distance.html" alt="exotica::Distance" shape="rect" coords="1981,224,2254,248"/>
@@ -117,10 +118,11 @@ Inheritance diagram for exotica::Object:</div>
 <area href="classexotica_1_1JointVelocityBackwardDifference.html" title="Time-derivative estimation by backward differencing. JointVelocityBackwardDifference uses backward di..." alt="exotica::JointVelocityBackwardDifference" shape="rect" coords="1981,840,2254,864"/>
 <area href="classexotica_1_1JointVelocityLimit.html" title="Joint Velocity Limit taskmap for time-indexed problems. Penalisations of joint velocity limit violati..." alt="exotica::JointVelocityLimit" shape="rect" coords="1981,896,2254,920"/>
 <area href="classexotica_1_1LookAt.html" title="Points end-effector to look at a given target. Looks at a target point by penalizing the vector which..." alt="exotica::LookAt" shape="rect" coords="1981,952,2254,976"/>
-<area href="classexotica_1_1PointToLine.html" alt="exotica::PointToLine" shape="rect" coords="1981,1008,2254,1032"/>
-<area href="classexotica_1_1PointToPlane.html" alt="exotica::PointToPlane" shape="rect" coords="1981,1064,2254,1088"/>
-<area href="classexotica_1_1QuasiStatic.html" alt="exotica::QuasiStatic" shape="rect" coords="1981,1120,2254,1144"/>
-<area href="classexotica_1_1SphereCollision.html" alt="exotica::SphereCollision" shape="rect" coords="1981,1176,2254,1200"/>
+<area href="classexotica_1_1Manipulability.html" title="Manipulability measure. The manipulability measure for a robot at a given joint configuration indicat..." alt="exotica::Manipulability" shape="rect" coords="1981,1008,2254,1032"/>
+<area href="classexotica_1_1PointToLine.html" alt="exotica::PointToLine" shape="rect" coords="1981,1064,2254,1088"/>
+<area href="classexotica_1_1PointToPlane.html" alt="exotica::PointToPlane" shape="rect" coords="1981,1120,2254,1144"/>
+<area href="classexotica_1_1QuasiStatic.html" alt="exotica::QuasiStatic" shape="rect" coords="1981,1176,2254,1200"/>
+<area href="classexotica_1_1SphereCollision.html" alt="exotica::SphereCollision" shape="rect" coords="1981,1232,2254,1256"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -135,8 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b1a479d989b9acd18f42e603b1ce67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac28824c5d57b0f28fea7a487d211a4b6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#ac28824c5d57b0f28fea7a487d211a4b6">GetObjectName</a> ()</td></tr>
 <tr class="separator:ac28824c5d57b0f28fea7a487d211a4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216aecd7ee95448aa535fd7009869202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a216aecd7ee95448aa535fd7009869202">InstatiateObject</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
-<tr class="separator:a216aecd7ee95448aa535fd7009869202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081338253532f0a2d0411ec74261abee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a081338253532f0a2d0411ec74261abee">InstantiateObject</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
+<tr class="separator:a081338253532f0a2d0411ec74261abee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04ebe4afb65fe1d825070e19a92f7a9f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a04ebe4afb65fe1d825070e19a92f7a9f">Print</a> (std::string prepend)</td></tr>
 <tr class="separator:a04ebe4afb65fe1d825070e19a92f7a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -232,8 +234,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a216aecd7ee95448aa535fd7009869202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a216aecd7ee95448aa535fd7009869202">&#9670;&nbsp;</a></span>InstatiateObject()</h2>
+<a id="a081338253532f0a2d0411ec74261abee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081338253532f0a2d0411ec74261abee">&#9670;&nbsp;</a></span>InstantiateObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +244,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void exotica::Object::InstatiateObject </td>
+          <td class="memname">void exotica::Object::InstantiateObject </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;&#160;</td>
           <td class="paramname"><em>init</em></td><td>)</td>
@@ -383,12 +385,12 @@ template&lt;typename BO &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/wxm/dev/exotica_ws/src/exotica/exotica_core/include/exotica_core/<a class="el" href="object_8h_source.html">object.h</a></li>
+<li>/home/wxm/tmp/exotica/exotica_core/include/exotica_core/<a class="el" href="object_8h_source.html">object.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 21:28:34 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 19:35:55 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

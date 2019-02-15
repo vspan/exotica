@@ -853,14 +853,14 @@
 <code class="descname">add_object</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pyexotica.Scene.add_object" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overloaded function.</p>
 <ol class="arabic simple">
-<li>add_object(self: _pyexotica.Scene, name: unicode, transform: _pyexotica.KDLFrame=KDL::Frame ([0.000000 0.000000 0.000000] [0.000000 0.000000 0.000000 1.000000]), parent: unicode=u’‘, shape_resource_path: unicode, scale: numpy.ndarray[float64[3, 1]]=array([ 1.,  1.,  1.]), update_collision_scene: bool=True) -&gt; None</li>
-<li>add_object(self: _pyexotica.Scene, name: unicode, transform: _pyexotica.KDLFrame=KDL::Frame ([0.000000 0.000000 0.000000] [0.000000 0.000000 0.000000 1.000000]), parent: unicode=u’‘, shape: shapes::Shape, inertia: _pyexotica.KDLRigidBodyInertia=&lt;_pyexotica.KDLRigidBodyInertia object at 0x7f581042fb20&gt;, update_collision_scene: bool=True) -&gt; None</li>
+<li>add_object(self: _pyexotica.Scene, name: unicode, transform: _pyexotica.KDLFrame=KDL::Frame ([0.000000 0.000000 0.000000] [0.000000 0.000000 0.000000 1.000000]), parent: unicode=u’‘, shape_resource_path: unicode, scale: numpy.ndarray[float64[3, 1]]=array([1., 1., 1.]), update_collision_scene: bool=True) -&gt; None</li>
+<li>add_object(self: _pyexotica.Scene, name: unicode, transform: _pyexotica.KDLFrame=KDL::Frame ([0.000000 0.000000 0.000000] [0.000000 0.000000 0.000000 1.000000]), parent: unicode=u’‘, shape: shapes::Shape, inertia: _pyexotica.KDLRigidBodyInertia=&lt;_pyexotica.KDLRigidBodyInertia object at 0x7f60ac37dbc8&gt;, update_collision_scene: bool=True) -&gt; None</li>
 </ol>
 </dd></dl>
 
 <dl class="method">
 <dt id="pyexotica.Scene.add_object_to_environment">
-<code class="descname">add_object_to_environment</code><span class="sig-paren">(</span><em>self: _pyexotica.Scene</em>, <em>name: unicode</em>, <em>transform: _pyexotica.KDLFrame=KDL::Frame ([0.000000 0.000000 0.000000] [0.000000 0.000000 0.000000 1.000000])</em>, <em>shape: shapes::Shape</em>, <em>colour: numpy.ndarray[float64[4</em>, <em>1]]=array([ 0.5</em>, <em>0.5</em>, <em>0.5</em>, <em>1. ])</em>, <em>update_collision_scene: bool=True</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pyexotica.Scene.add_object_to_environment" title="Permalink to this definition">¶</a></dt>
+<code class="descname">add_object_to_environment</code><span class="sig-paren">(</span><em>self: _pyexotica.Scene</em>, <em>name: unicode</em>, <em>transform: _pyexotica.KDLFrame=KDL::Frame ([0.000000 0.000000 0.000000] [0.000000 0.000000 0.000000 1.000000])</em>, <em>shape: shapes::Shape</em>, <em>colour: numpy.ndarray[float64[4</em>, <em>1]]=array([0.5</em>, <em>0.5</em>, <em>0.5</em>, <em>1. ])</em>, <em>update_collision_scene: bool=True</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pyexotica.Scene.add_object_to_environment" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1007,6 +1007,11 @@
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pyexotica.Scene.get_tree_names">
+<code class="descname">get_tree_names</code><span class="sig-paren">(</span><em>self: _pyexotica.Scene</em><span class="sig-paren">)</span> &#x2192; List[unicode]<a class="headerlink" href="#pyexotica.Scene.get_tree_names" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="pyexotica.Scene.has_attached_object">
 <code class="descname">has_attached_object</code><span class="sig-paren">(</span><em>self: _pyexotica.Scene</em>, <em>arg0: unicode</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#pyexotica.Scene.has_attached_object" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -1114,13 +1119,13 @@
 <em class="property">class </em><code class="descclassname">pyexotica.</code><code class="descname">Setup</code><a class="headerlink" href="#pyexotica.Setup" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
 <dl class="method">
-<dt id="pyexotica.Setup.create_map">
-<code class="descname">create_map</code><span class="sig-paren">(</span><em>arg0: Initializer</em><span class="sig-paren">)</span> &#x2192; exotica::TaskMap<a class="headerlink" href="#pyexotica.Setup.create_map" title="Permalink to this definition">¶</a></dt>
+<dt id="pyexotica.Setup.create_problem">
+<code class="descname">create_problem</code><span class="sig-paren">(</span><em>arg0: Initializer</em><span class="sig-paren">)</span> &#x2192; exotica::PlanningProblem<a class="headerlink" href="#pyexotica.Setup.create_problem" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="pyexotica.Setup.create_problem">
-<code class="descname">create_problem</code><span class="sig-paren">(</span><em>arg0: Initializer</em><span class="sig-paren">)</span> &#x2192; exotica::PlanningProblem<a class="headerlink" href="#pyexotica.Setup.create_problem" title="Permalink to this definition">¶</a></dt>
+<dt id="pyexotica.Setup.create_scene">
+<code class="descname">create_scene</code><span class="sig-paren">(</span><em>arg0: Initializer</em><span class="sig-paren">)</span> &#x2192; exotica::Scene<a class="headerlink" href="#pyexotica.Setup.create_scene" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1132,6 +1137,12 @@
 <dt id="pyexotica.Setup.get_collision_scenes">
 <code class="descname">get_collision_scenes</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[unicode]<a class="headerlink" href="#pyexotica.Setup.get_collision_scenes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a list of available collision scene plug-ins.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyexotica.Setup.get_dynamics_solvers">
+<code class="descname">get_dynamics_solvers</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[unicode]<a class="headerlink" href="#pyexotica.Setup.get_dynamics_solvers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of available dynamics solvers plug-ins.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1295,6 +1306,37 @@
 </dd></dl>
 
 <dl class="class">
+<dt id="pyexotica.TaskIndexing">
+<em class="property">class </em><code class="descclassname">pyexotica.</code><code class="descname">TaskIndexing</code><a class="headerlink" href="#pyexotica.TaskIndexing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
+<dl class="attribute">
+<dt id="pyexotica.TaskIndexing.id">
+<code class="descname">id</code><a class="headerlink" href="#pyexotica.TaskIndexing.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyexotica.TaskIndexing.length">
+<code class="descname">length</code><a class="headerlink" href="#pyexotica.TaskIndexing.length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyexotica.TaskIndexing.lengthJ">
+<code class="descname">lengthJ</code><a class="headerlink" href="#pyexotica.TaskIndexing.lengthJ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyexotica.TaskIndexing.start">
+<code class="descname">start</code><a class="headerlink" href="#pyexotica.TaskIndexing.start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyexotica.TaskIndexing.startJ">
+<code class="descname">startJ</code><a class="headerlink" href="#pyexotica.TaskIndexing.startJ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
 <dt id="pyexotica.TaskMap">
 <em class="property">class </em><code class="descclassname">pyexotica.</code><code class="descname">TaskMap</code><a class="headerlink" href="#pyexotica.TaskMap" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">_pyexotica.Object</span></code></p>
@@ -1417,6 +1459,11 @@
 <dd></dd></dl>
 
 <dl class="attribute">
+<dt id="pyexotica.TimeIndexedTask.indexing">
+<code class="descname">indexing</code><a class="headerlink" href="#pyexotica.TimeIndexedTask.indexing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
 <dt id="pyexotica.TimeIndexedTask.jacobian">
 <code class="descname">jacobian</code><a class="headerlink" href="#pyexotica.TimeIndexedTask.jacobian" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -1434,6 +1481,11 @@
 <dl class="attribute">
 <dt id="pyexotica.TimeIndexedTask.num_tasks">
 <code class="descname">num_tasks</code><a class="headerlink" href="#pyexotica.TimeIndexedTask.num_tasks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pyexotica.TimeIndexedTask.rho">
+<code class="descname">rho</code><a class="headerlink" href="#pyexotica.TimeIndexedTask.rho" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">

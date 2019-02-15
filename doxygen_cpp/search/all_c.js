@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['l_5f',['L_',['../classexotica_1_1QuadrotorDynamicsSolver.html#a8678f25fb4602e78c0e524316555804f',1,'exotica::QuadrotorDynamicsSolver']]],
   ['lambda_5f',['lambda_',['../classexotica_1_1LevenbergMarquardtSolver.html#a8dd7436e6330087cafbe296876293910',1,'exotica::LevenbergMarquardtSolver']]],
   ['last_5ft_5f',['last_T_',['../classexotica_1_1AICOSolver.html#a7bb4457c5e68388fc3303414c9bebd76',1,'exotica::AICOSolver']]],
   ['lazyprmsolver',['LazyPRMSolver',['../classexotica_1_1LazyPRMSolver.html',1,'exotica::LazyPRMSolver'],['../classexotica_1_1LazyPRMSolver.html#a86c9a89cd98cd8a7e979c536c549e215',1,'exotica::LazyPRMSolver::LazyPRMSolver()']]],

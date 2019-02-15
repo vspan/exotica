@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numericaldiffmode',['NumericalDiffMode',['../namespaceEigen.html#a53f19342e6b4ecd38ae002d470299add',1,'Eigen']]]
+  ['kinematicrequestflags',['KinematicRequestFlags',['../namespaceexotica.html#a8879608908229eff06df2b94c63f1a99',1,'exotica']]]
 ];

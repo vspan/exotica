@@ -13,5 +13,8 @@ var searchData=
   ['distance',['Distance',['../classexotica_1_1Distance.html#a9048118fc69e915731d1bd5f203663d3',1,'exotica::Distance::Distance()'],['../classexotica_1_1SphereCollision.html#ac7daca0b3b025b20c5ed9e4eb6b35bb0',1,'exotica::SphereCollision::Distance()']]],
   ['distancedata',['DistanceData',['../structexotica_1_1CollisionSceneFCLLatest_1_1DistanceData.html#a42aa5f82d227e83328bb159877c433fb',1,'exotica::CollisionSceneFCLLatest::DistanceData']]],
   ['distancefunction',['distanceFunction',['../classexotica_1_1OMPLTimeIndexedRRTConnect.html#a8ecd1ee48cf57b286c90d9b3788d6b9d',1,'exotica::OMPLTimeIndexedRRTConnect']]],
-  ['doeslinkwithnameexist',['DoesLinkWithNameExist',['../classexotica_1_1KinematicTree.html#aa548bc416516a160a9738ab4e22b2b5a',1,'exotica::KinematicTree']]]
+  ['doeslinkwithnameexist',['DoesLinkWithNameExist',['../classexotica_1_1KinematicTree.html#aa548bc416516a160a9738ab4e22b2b5a',1,'exotica::KinematicTree']]],
+  ['doubleintegratordynamicssolver',['DoubleIntegratorDynamicsSolver',['../classexotica_1_1DoubleIntegratorDynamicsSolver.html#ad05e59c08b81cadfdf5ac8572075665d',1,'exotica::DoubleIntegratorDynamicsSolver']]],
+  ['dynamics',['Dynamics',['../classexotica_1_1DynamicTimeIndexedShootingProblem.html#ae41662437ed26180e5ee8457e443b9d5',1,'exotica::DynamicTimeIndexedShootingProblem']]],
+  ['dynamictimeindexedshootingproblem',['DynamicTimeIndexedShootingProblem',['../classexotica_1_1DynamicTimeIndexedShootingProblem.html#aac17f189ae6670e3a6d8d23c9bc75bfd',1,'exotica::DynamicTimeIndexedShootingProblem']]]
 ];

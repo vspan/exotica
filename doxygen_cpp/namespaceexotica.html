@@ -71,6 +71,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1AbstractDynamicsSolver.html">AbstractDynamicsSolver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1AICOSolver.html">AICOSolver</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves motion planning problem using Approximate Inference Control method.  <a href="classexotica_1_1AICOSolver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,6 +108,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Distance.html">Distance</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1DoubleIntegratorDynamicsSolver.html">DoubleIntegratorDynamicsSolver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1DynamicTimeIndexedShootingProblem.html">DynamicTimeIndexedShootingProblem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1EffAxisAlignment.html">EffAxisAlignment</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1EffFrame.html">EffFrame</a></td></tr>
@@ -132,7 +138,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1IKSolver.html">IKSolver</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IK position solver The solver constructs and solves a linear program of the following form: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ (SJW)x=y \]" src="form_21.png"/>
+<img class="formulaDsp" alt="\[ (SJW)x=y \]" src="form_24.png"/>
 </p>
 <p> Where S is a diagonal matrix of task scaling factors rho for each task, jacobian is the Jacobian, W is a diagonal matrix of the joint space weights.  <a href="classexotica_1_1IKSolver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +196,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1LookAt.html">LookAt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Points end-effector to look at a given target. Looks at a target point by penalizing the vector which defines the orthogonal projection onto a defined line in the end-effector frame.  <a href="classexotica_1_1LookAt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Manipulability.html">Manipulability</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classexotica_1_1Manipulability.html" title="Manipulability measure. The manipulability measure for a robot at a given joint configuration indicat...">Manipulability</a> measure. The manipulability measure for a robot at a given joint configuration indicates dexterity, that is, how isotropic the robot's motion is with respect to the task space motion. The measure is high when the manipulator is capable of equal motion in all directions and low when the manipulator is close to a singularity. This task map implements Yoshikawa's manipulability measure that is based on the shape of the velocity ellipsoid and expressed by </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ Phi(x) := \sqrt{J(x)J(x)^T} \]" src="form_7.png"/>
+</p>
+<p> where $J(x)$ is the manipulator Jacobian matrix.  <a href="classexotica_1_1Manipulability.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1MotionSolver.html">MotionSolver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html">Object</a></td></tr>
@@ -218,6 +230,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1OMPLTimeIndexedStateValidityChecker.html">OMPLTimeIndexedStateValidityChecker</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1PinocchioDynamicsSolver.html">PinocchioDynamicsSolver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1PlanningProblem.html">PlanningProblem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1PointToLine.html">PointToLine</a></td></tr>
@@ -229,6 +243,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1PRMSolver.html">PRMSolver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Property.html">Property</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1QuadrotorDynamicsSolver.html">QuadrotorDynamicsSolver</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quadrotor dynamics with quaternion representation Based on D. Mellinger, N. Michael, and V. Kumar, "Trajectory generation and control for precise aggressive maneuvers with quadrotors", Proceedings of the 12th International Symposium on Experimental Robotics (ISER 2010), 2010. Cf. <a href="https://journals.sagepub.com/doi/abs/10.1177/0278364911434236">https://journals.sagepub.com/doi/abs/10.1177/0278364911434236</a>.  <a href="classexotica_1_1QuadrotorDynamicsSolver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1QuasiStatic.html">QuasiStatic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,6 +314,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:ad589253e70df9293f4a3f9c03e006ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c6240ffc0f5c240e5d1e1c86178138b"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classexotica_1_1CollisionScene.html">CollisionScene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a0c6240ffc0f5c240e5d1e1c86178138b">CollisionScenePtr</a></td></tr>
 <tr class="separator:a0c6240ffc0f5c240e5d1e1c86178138b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75413099ae24cb74b138e06b53a89bf6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classexotica_1_1AbstractDynamicsSolver.html">AbstractDynamicsSolver</a>&lt; double, Eigen::Dynamic, Eigen::Dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a75413099ae24cb74b138e06b53a89bf6">DynamicsSolver</a></td></tr>
+<tr class="separator:a75413099ae24cb74b138e06b53a89bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311ceabe57104d567f8f110043ba125e"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="namespaceexotica.html#a75413099ae24cb74b138e06b53a89bf6">exotica::DynamicsSolver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a311ceabe57104d567f8f110043ba125e">DynamicsSolverPtr</a></td></tr>
+<tr class="separator:a311ceabe57104d567f8f110043ba125e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95535966e624754067a0737dc4ed0a2a"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classexotica_1_1MotionSolver.html">exotica::MotionSolver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a95535966e624754067a0737dc4ed0a2a">MotionSolverPtr</a></td></tr>
 <tr class="separator:a95535966e624754067a0737dc4ed0a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ba0190ea0d4edfe84102bdf14a537c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classexotica_1_1Factory.html">Factory</a>&lt; <a class="el" href="classexotica_1_1PlanningProblem.html">PlanningProblem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a39ba0190ea0d4edfe84102bdf14a537c">PlanningProblemFac</a></td></tr>
@@ -307,6 +328,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a5f4ba1308e35ddb070aca36f12432a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c8ffc5ae9777bdedbf8105b29e7cef"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classexotica_1_1BoundedTimeIndexedProblem.html">exotica::BoundedTimeIndexedProblem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#ac2c8ffc5ae9777bdedbf8105b29e7cef">BoundedTimeIndexedProblemPtr</a></td></tr>
 <tr class="separator:ac2c8ffc5ae9777bdedbf8105b29e7cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9390cec0d606e2e9b6fd8277ac49b9"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classexotica_1_1DynamicTimeIndexedShootingProblem.html">exotica::DynamicTimeIndexedShootingProblem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a8c9390cec0d606e2e9b6fd8277ac49b9">DynamicTimeIndexedShootingProblemPtr</a></td></tr>
+<tr class="separator:a8c9390cec0d606e2e9b6fd8277ac49b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6562dc6fc53f6be14dc1b4157bf86bee"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classexotica_1_1EndPoseProblem.html">exotica::EndPoseProblem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a6562dc6fc53f6be14dc1b4157bf86bee">EndPoseProblemPtr</a></td></tr>
 <tr class="separator:a6562dc6fc53f6be14dc1b4157bf86bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85dd0d6625e5be856bc5ad702fc80dcd"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classexotica_1_1SamplingProblem.html">exotica::SamplingProblem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a85dd0d6625e5be856bc5ad702fc80dcd">SamplingProblemPtr</a></td></tr>
@@ -368,6 +391,11 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:af655323905f37d8a279063f9d75d433e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#af655323905f37d8a279063f9d75d433e">Integrator</a> { <a class="el" href="namespaceexotica.html#af655323905f37d8a279063f9d75d433eaec6c5a8ffec279574205f1d2c9714a66">RK1</a> = 0, 
+<a class="el" href="namespaceexotica.html#af655323905f37d8a279063f9d75d433eac9220b7e32da0bed762781cb1b97bed2">RK2</a>, 
+<a class="el" href="namespaceexotica.html#af655323905f37d8a279063f9d75d433ea862d90cf453dc1c6a4dd365e7a7e1534">RK4</a>
+ }</td></tr>
+<tr class="separator:af655323905f37d8a279063f9d75d433e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca690cccfbbfdb24827333304ee338f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a5ca690cccfbbfdb24827333304ee338f">BaseType</a> { <a class="el" href="namespaceexotica.html#a5ca690cccfbbfdb24827333304ee338fa97ef0deed3b6cea30b5ef0d461b13cbc">FIXED</a> = 0, 
 <a class="el" href="namespaceexotica.html#a5ca690cccfbbfdb24827333304ee338fa047a2d4a4431720713c876e2b9c5f752">FLOATING</a> = 10, 
 <a class="el" href="namespaceexotica.html#a5ca690cccfbbfdb24827333304ee338fa997d5dd36b61cdafeabf856ab83593e8">PLANAR</a> = 20
@@ -434,7 +462,7 @@ Functions</h2></td></tr>
 <tr class="separator:a2d6450eb517e0ced37a0a83741cc4d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f3a5e4b825e5edd850020652414f606"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename T3 &gt; </td></tr>
 <tr class="memitem:a2f3a5e4b825e5edd850020652414f606"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#a2f3a5e4b825e5edd850020652414f606">AinvBSymPosDef</a> (T1 &amp;x, const T2 &amp;A, const T3 &amp;b)</td></tr>
-<tr class="memdesc:a2f3a5e4b825e5edd850020652414f606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the solution to the linear problem <img class="formulaInl" alt="$x=Ab$" src="form_20.png"/> for symmetric positive definite matrix A.  <a href="#a2f3a5e4b825e5edd850020652414f606">More...</a><br /></td></tr>
+<tr class="memdesc:a2f3a5e4b825e5edd850020652414f606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the solution to the linear problem <img class="formulaInl" alt="$x=Ab$" src="form_23.png"/> for symmetric positive definite matrix A.  <a href="#a2f3a5e4b825e5edd850020652414f606">More...</a><br /></td></tr>
 <tr class="separator:a2f3a5e4b825e5edd850020652414f606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef24a7f69cf691663c3c29124c22d85e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceexotica.html#a8879608908229eff06df2b94c63f1a99">KinematicRequestFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexotica.html#aef24a7f69cf691663c3c29124c22d85e">operator|</a> (<a class="el" href="namespaceexotica.html#a8879608908229eff06df2b94c63f1a99">KinematicRequestFlags</a> a, <a class="el" href="namespaceexotica.html#a8879608908229eff06df2b94c63f1a99">KinematicRequestFlags</a> b)</td></tr>
 <tr class="separator:aef24a7f69cf691663c3c29124c22d85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -783,6 +811,48 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a75413099ae24cb74b138e06b53a89bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75413099ae24cb74b138e06b53a89bf6">&#9670;&nbsp;</a></span>DynamicsSolver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classexotica_1_1AbstractDynamicsSolver.html">AbstractDynamicsSolver</a>&lt;double, Eigen::Dynamic, Eigen::Dynamic&gt; <a class="el" href="namespaceexotica.html#a75413099ae24cb74b138e06b53a89bf6">exotica::DynamicsSolver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a311ceabe57104d567f8f110043ba125e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311ceabe57104d567f8f110043ba125e">&#9670;&nbsp;</a></span>DynamicsSolverPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="namespaceexotica.html#a75413099ae24cb74b138e06b53a89bf6">exotica::DynamicsSolver</a>&gt; <a class="el" href="namespaceexotica.html#a311ceabe57104d567f8f110043ba125e">exotica::DynamicsSolverPtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c9390cec0d606e2e9b6fd8277ac49b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c9390cec0d606e2e9b6fd8277ac49b9">&#9670;&nbsp;</a></span>DynamicTimeIndexedShootingProblemPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classexotica_1_1DynamicTimeIndexedShootingProblem.html">exotica::DynamicTimeIndexedShootingProblem</a>&gt; <a class="el" href="namespaceexotica.html#a8c9390cec0d606e2e9b6fd8277ac49b9">exotica::DynamicTimeIndexedShootingProblemPtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6562dc6fc53f6be14dc1b4157bf86bee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6562dc6fc53f6be14dc1b4157bf86bee">&#9670;&nbsp;</a></span>EndPoseProblemPtr</h2>
 
@@ -1073,6 +1143,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="af655323905f37d8a279063f9d75d433e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af655323905f37d8a279063f9d75d433e">&#9670;&nbsp;</a></span>Integrator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceexotica.html#af655323905f37d8a279063f9d75d433e">exotica::Integrator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af655323905f37d8a279063f9d75d433eaec6c5a8ffec279574205f1d2c9714a66"></a>RK1&#160;</td><td class="fielddoc"><p>Forward Euler. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af655323905f37d8a279063f9d75d433eac9220b7e32da0bed762781cb1b97bed2"></a>RK2&#160;</td><td class="fielddoc"><p>Explicit trapezoid rule. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af655323905f37d8a279063f9d75d433ea862d90cf453dc1c6a4dd365e7a7e1534"></a>RK4&#160;</td><td class="fielddoc"><p>Runge-Kutta 4. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a8879608908229eff06df2b94c63f1a99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8879608908229eff06df2b94c63f1a99">&#9670;&nbsp;</a></span>KinematicRequestFlags</h2>
 
@@ -1198,7 +1290,7 @@ template&lt;typename T1 , typename T2 , typename T3 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the solution to the linear problem <img class="formulaInl" alt="$x=Ab$" src="form_20.png"/> for symmetric positive definite matrix A. </p>
+<p>Computes the solution to the linear problem <img class="formulaInl" alt="$x=Ab$" src="form_23.png"/> for symmetric positive definite matrix A. </p>
 
 </div>
 </div>
@@ -3033,7 +3125,7 @@ template&lt;&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 21:28:34 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 19:35:55 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

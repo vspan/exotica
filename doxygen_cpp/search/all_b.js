@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['k_5ff_5f',['k_f_',['../classexotica_1_1QuadrotorDynamicsSolver.html#adc82dbdab8c36d39ada739c50dbdc359',1,'exotica::QuadrotorDynamicsSolver']]],
+  ['k_5fm_5f',['k_m_',['../classexotica_1_1QuadrotorDynamicsSolver.html#ad70d0c5b89231554b3651135b41e8933',1,'exotica::QuadrotorDynamicsSolver']]],
   ['kdl2fcl',['KDL2fcl',['../namespacefcl__convert.html#ae279b922c9838f6549e98b7773a69460',1,'fcl_convert']]],
   ['kin_5ffk',['KIN_FK',['../namespaceexotica.html#a8879608908229eff06df2b94c63f1a99a31d69c9fe03932e017a081e81ede78a9',1,'exotica']]],
   ['kin_5ffk_5fvel',['KIN_FK_VEL',['../namespaceexotica.html#a8879608908229eff06df2b94c63f1a99af4c5c27896d87716a02228ba0f881641',1,'exotica']]],
@@ -10,7 +12,7 @@ var searchData=
   ['kinematic_5frequest_5f',['kinematic_request_',['../classexotica_1_1Scene.html#a946f7dbf990b9ff9b5259a0ab5d78c4e',1,'exotica::Scene']]],
   ['kinematic_5frequest_5fcallback_5f',['kinematic_request_callback_',['../classexotica_1_1Scene.html#a8755158207a3e2a273d8f636f1767e84',1,'exotica::Scene']]],
   ['kinematic_5fsolution_5f',['kinematic_solution_',['../classexotica_1_1Scene.html#af3afc81cbd9e7770630e8a6dbc67142c',1,'exotica::Scene']]],
-  ['kinematic_5fsolutions_5f',['kinematic_solutions_',['../classexotica_1_1TimeIndexedProblem.html#af2abe5730c397719b454cd4d557f581f',1,'exotica::TimeIndexedProblem::kinematic_solutions_()'],['../classexotica_1_1UnconstrainedTimeIndexedProblem.html#a0df4a32d58532669341519cf514f8707',1,'exotica::UnconstrainedTimeIndexedProblem::kinematic_solutions_()']]],
+  ['kinematic_5fsolutions_5f',['kinematic_solutions_',['../classexotica_1_1DynamicTimeIndexedShootingProblem.html#a9a48ff5862e65232e74119cd8b3e0f56',1,'exotica::DynamicTimeIndexedShootingProblem::kinematic_solutions_()'],['../classexotica_1_1TimeIndexedProblem.html#af2abe5730c397719b454cd4d557f581f',1,'exotica::TimeIndexedProblem::kinematic_solutions_()'],['../classexotica_1_1UnconstrainedTimeIndexedProblem.html#a0df4a32d58532669341519cf514f8707',1,'exotica::UnconstrainedTimeIndexedProblem::kinematic_solutions_()']]],
   ['kinematic_5ftree_2ecpp',['kinematic_tree.cpp',['../kinematic__tree_8cpp.html',1,'']]],
   ['kinematic_5ftree_2eh',['kinematic_tree.h',['../kinematic__tree_8h.html',1,'']]],
   ['kinematica_5f',['kinematica_',['../classexotica_1_1Scene.html#ad20516e13cdd941bbb46ea125ef478b0',1,'exotica::Scene']]],

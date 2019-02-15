@@ -199,8 +199,8 @@ the UnconstrainedEndPoseProblem found in the <a class="reference external" href=
 <div class="highlight-c++"><div class="highlight"><pre><span></span>    <span class="cp">#include</span> <span class="cpf">&lt;exotica_core/exotica_core.h&gt;</span><span class="cp"></span>
 
     <span class="c1">// Manual initialization requires dependency on specific solvers and task maps:</span>
-    <span class="cp">#include</span> <span class="cpf">&lt;exotica_ik_solver/IKSolverInitializer.h&gt;</span><span class="cp"></span>
-    <span class="cp">#include</span> <span class="cpf">&lt;task_map/EffFrameInitializer.h&gt;</span><span class="cp"></span>
+    <span class="cp">#include</span> <span class="cpf">&lt;exotica_ik_solver/IKSolver_initializer.h&gt;</span><span class="cp"></span>
+    <span class="cp">#include</span> <span class="cpf">&lt;task_map/EffFrame_initializer.h&gt;</span><span class="cp"></span>
 
     <span class="k">using</span> <span class="k">namespace</span> <span class="n">exotica</span><span class="p">;</span>
 
@@ -236,9 +236,9 @@ included for both the task map and the solver. These are stored in the
 <code class="docutils literal"><span class="pre">exotations</span></code> directory under <code class="docutils literal"><span class="pre">task_maps</span></code> and <code class="docutils literal"><span class="pre">solvers</span></code>
 respectively.</p>
 <p>Currently available solvers are:</p>
-<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;exotica_ompl_solver/OMPLSolverInitializer.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;exotica_aico_solver/AICOSolverInitializer.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;exotica_ik_solver/IKSolverInitializer.h&gt;</span><span class="cp"></span>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;exotica_ompl_solver/OMPLSolver_initializer.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;exotica_aico_solver/AICOSolver_initializer.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;exotica_ik_solver/IKSolver_initializer.h&gt;</span><span class="cp"></span>
 </pre></div>
 </div>
 <p>Once we have included the correct initializers, we must initialise:

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['b',['b',['../classexotica_1_1AICOSolver.html#a1ffb94225a76c0e8da1106dc63d9d7ff',1,'exotica::AICOSolver::b()'],['../classexotica_1_1BayesianIKSolver.html#ae657ee7a5ef4dfc80a2ecf01e92df074',1,'exotica::BayesianIKSolver::b()']]],
+  ['b_5f',['B_',['../classexotica_1_1DoubleIntegratorDynamicsSolver.html#ac4f8555fd3e98475d410b859a5393a4f',1,'exotica::DoubleIntegratorDynamicsSolver']]],
   ['b_5fold',['b_old',['../classexotica_1_1AICOSolver.html#a84f688563174babd9f4e7c4a8fc4fc30',1,'exotica::AICOSolver::b_old()'],['../classexotica_1_1BayesianIKSolver.html#ad6767e0b1944f7adcd4f9ed0a7594f1d',1,'exotica::BayesianIKSolver::b_old()']]],
   ['b_5fstep_5f',['b_step_',['../classexotica_1_1AICOSolver.html#ab65f913db1718279235c10e8d867732b',1,'exotica::AICOSolver::b_step_()'],['../classexotica_1_1BayesianIKSolver.html#a8a8bbc24d61320907249d1d25ba532f7',1,'exotica::BayesianIKSolver::b_step_()']]],
   ['b_5fstep_5fold_5f',['b_step_old_',['../classexotica_1_1AICOSolver.html#a485d2dde6818a59618c84f92709caf9e',1,'exotica::AICOSolver::b_step_old_()'],['../classexotica_1_1BayesianIKSolver.html#af516708957413d399edff7d26b71a472',1,'exotica::BayesianIKSolver::b_step_old_()']]],

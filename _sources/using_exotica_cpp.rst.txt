@@ -40,14 +40,14 @@ the solver:
                              0.5 + sin(t * M_PI * 0.5) * 0.2;
 
             // Solve the problem using the IK solver
-            any_solver->Solve(q, solution);
+            any_solver->Solve(solution);
 
             double time = ros::Duration((ros::WallTime::now() - start_time).toSec()).toSec();
             ROS_INFO_STREAM_THROTTLE(0.5, "Finished solving in "<<time<<"s. Solution ["<<solution<<"]");
             q = solution.row(solution.rows() - 1);
 
             my_problem->Update(q);
-            my_problem->getScene()->getKinematicTree().publishFrames();
+            my_problem->getScene()->GetKinematicTree().publishFrames();
 
             ros::spinOnce();
             loop_rate.sleep();
@@ -133,7 +133,7 @@ Solving Problems
 
 .. code-block:: c++
 
-        any_solver->Solve(q, solution);
+        any_solver->Solve(solution);
 
 Solution Format
 ===============
@@ -214,7 +214,7 @@ by RVIZ:
 
 .. code-block:: c++
 
-            my_problem->getScene()->getKinematicTree().publishFrames();
+            my_problem->getScene()->GetKinematicTree().publishFrames();
 
 RVIZ can either be set-up manually or via a
 `ROSlaunch <Setting-up-ROSlaunch.html>`__

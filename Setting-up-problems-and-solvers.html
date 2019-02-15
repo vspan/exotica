@@ -202,8 +202,8 @@ example file as a guide. The code is displayed below.</p>
 <div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;exotica_core/exotica_core.h&gt;</span><span class="cp"></span>
 
 <span class="c1">// Manual initialization requires dependency on specific solvers and task maps:</span>
-<span class="cp">#include</span> <span class="cpf">&lt;exotica_ik_solver/IKSolverInitializer.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;task_map/EffFrameInitializer.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;exotica_ik_solver/IKSolver_initializer.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;task_map/EffFrame_initializer.h&gt;</span><span class="cp"></span>
 
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">exotica</span><span class="p">;</span>
 
@@ -267,7 +267,7 @@ example file as a guide. The code is displayed below.</p>
         <span class="n">q</span> <span class="o">=</span> <span class="n">solution</span><span class="p">.</span><span class="n">row</span><span class="p">(</span><span class="n">solution</span><span class="p">.</span><span class="n">rows</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
 
         <span class="n">my_problem</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">(</span><span class="n">q</span><span class="p">);</span>
-        <span class="n">my_problem</span><span class="o">-&gt;</span><span class="n">getScene</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">getKinematicTree</span><span class="p">().</span><span class="n">publishFrames</span><span class="p">();</span>
+        <span class="n">my_problem</span><span class="o">-&gt;</span><span class="n">getScene</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetKinematicTree</span><span class="p">().</span><span class="n">publishFrames</span><span class="p">();</span>
 
         <span class="n">ros</span><span class="o">::</span><span class="n">spinOnce</span><span class="p">();</span>
         <span class="n">loop_rate</span><span class="p">.</span><span class="n">sleep</span><span class="p">();</span>
@@ -299,8 +299,8 @@ need to include the correct header files:</p>
 <div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;exotica_core/exotica_core.h&gt;</span><span class="cp"></span>
 
 <span class="c1">// Manual initialization requires dependency on specific solvers and task maps:</span>
-<span class="cp">#include</span> <span class="cpf">&lt;exotica_ik_solver/IKSolverInitializer.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;task_map/EffFrameInitializer.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;exotica_ik_solver/IKSolver_initializer.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;task_map/EffFrame_initializer.h&gt;</span><span class="cp"></span>
 </pre></div>
 </div>
 <p>Problem definitions are handled in the <code class="docutils literal"><span class="pre">exotica/Exotica.h</span></code> header, so we only need to

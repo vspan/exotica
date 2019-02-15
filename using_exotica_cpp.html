@@ -224,14 +224,14 @@ the solver:</p>
                          <span class="mf">0.5</span> <span class="o">+</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span> <span class="o">*</span> <span class="n">M_PI</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.2</span><span class="p">;</span>
 
         <span class="c1">// Solve the problem using the IK solver</span>
-        <span class="n">any_solver</span><span class="o">-&gt;</span><span class="n">Solve</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">solution</span><span class="p">);</span>
+        <span class="n">any_solver</span><span class="o">-&gt;</span><span class="n">Solve</span><span class="p">(</span><span class="n">solution</span><span class="p">);</span>
 
         <span class="kt">double</span> <span class="n">time</span> <span class="o">=</span> <span class="n">ros</span><span class="o">::</span><span class="n">Duration</span><span class="p">((</span><span class="n">ros</span><span class="o">::</span><span class="n">WallTime</span><span class="o">::</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">).</span><span class="n">toSec</span><span class="p">()).</span><span class="n">toSec</span><span class="p">();</span>
         <span class="n">ROS_INFO_STREAM_THROTTLE</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="s">&quot;Finished solving in &quot;</span><span class="o">&lt;&lt;</span><span class="n">time</span><span class="o">&lt;&lt;</span><span class="s">&quot;s. Solution [&quot;</span><span class="o">&lt;&lt;</span><span class="n">solution</span><span class="o">&lt;&lt;</span><span class="s">&quot;]&quot;</span><span class="p">);</span>
         <span class="n">q</span> <span class="o">=</span> <span class="n">solution</span><span class="p">.</span><span class="n">row</span><span class="p">(</span><span class="n">solution</span><span class="p">.</span><span class="n">rows</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
 
         <span class="n">my_problem</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">(</span><span class="n">q</span><span class="p">);</span>
-        <span class="n">my_problem</span><span class="o">-&gt;</span><span class="n">getScene</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">getKinematicTree</span><span class="p">().</span><span class="n">publishFrames</span><span class="p">();</span>
+        <span class="n">my_problem</span><span class="o">-&gt;</span><span class="n">getScene</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetKinematicTree</span><span class="p">().</span><span class="n">publishFrames</span><span class="p">();</span>
 
         <span class="n">ros</span><span class="o">::</span><span class="n">spinOnce</span><span class="p">();</span>
         <span class="n">loop_rate</span><span class="p">.</span><span class="n">sleep</span><span class="p">();</span>
@@ -301,7 +301,7 @@ holder:</p>
 </div>
 <div class="section" id="solving-problems">
 <h2>Solving Problems<a class="headerlink" href="#solving-problems" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">any_solver</span><span class="o">-&gt;</span><span class="n">Solve</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">solution</span><span class="p">);</span>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">any_solver</span><span class="o">-&gt;</span><span class="n">Solve</span><span class="p">(</span><span class="n">solution</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -370,7 +370,7 @@ deals with this and we’ll go through it now.</p>
 </div>
 <p>Now we can publish those frames to the /joint_states topic to be read
 by RVIZ:</p>
-<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">my_problem</span><span class="o">-&gt;</span><span class="n">getScene</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">getKinematicTree</span><span class="p">().</span><span class="n">publishFrames</span><span class="p">();</span>
+<div class="highlight-c++"><div class="highlight"><pre><span></span><span class="n">my_problem</span><span class="o">-&gt;</span><span class="n">getScene</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetKinematicTree</span><span class="p">().</span><span class="n">publishFrames</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>RVIZ can either be set-up manually or via a

@@ -13,10 +13,12 @@ var searchData=
   ['debug_5fpub_5f',['debug_pub_',['../classexotica_1_1PointToPlane.html#a67ab4f67988ddaf012de05b2c3106673',1,'exotica::PointToPlane::debug_pub_()'],['../classexotica_1_1QuasiStatic.html#af983a92b9a967ea23992683c85350cb1',1,'exotica::QuasiStatic::debug_pub_()'],['../classexotica_1_1SphereCollision.html#a8bd2c6090c3dc65c52ffcf4ef4c08b5b',1,'exotica::SphereCollision::debug_pub_()']]],
   ['debug_5fscene_5fchanged_5f',['debug_scene_changed_',['../classexotica_1_1KinematicTree.html#a08ea9d365c8f25179bce7c5a7a52b5b5',1,'exotica::KinematicTree']]],
   ['debug_5ftree_5f',['debug_tree_',['../classexotica_1_1KinematicTree.html#a0398d67b07c85e68235ab5c5f61e6f26',1,'exotica::KinematicTree']]],
-  ['dim_5f',['dim_',['../classexotica_1_1CenterOfMass.html#a596d1af73078302a9e205dd9908330be',1,'exotica::CenterOfMass']]],
+  ['dim_5f',['dim_',['../classexotica_1_1CenterOfMass.html#a596d1af73078302a9e205dd9908330be',1,'exotica::CenterOfMass::dim_()'],['../classexotica_1_1OMPLSE3RNStateSpace.html#a8f3f1d5701c3f3af66ed27eba9d657f7',1,'exotica::OMPLSE3RNStateSpace::dim_()'],['../classexotica_1_1OMPLSE2RNStateSpace.html#a7fe0477fd63c9d3634efae7837fda03c',1,'exotica::OMPLSE2RNStateSpace::dim_()']]],
   ['dir_5f',['dir_',['../classexotica_1_1EffAxisAlignment.html#aae4bcc3f8c3a74d218ef0c9f0ddd0cd6',1,'exotica::EffAxisAlignment']]],
   ['distance',['Distance',['../structexotica_1_1CollisionSceneFCLLatest_1_1DistanceData.html#ab5477896a2c62ccabb53e376e7472184',1,'exotica::CollisionSceneFCLLatest::DistanceData::Distance()'],['../structexotica_1_1CollisionProxy.html#af593dcc0dfd2b1736ecd088d3e297704',1,'exotica::CollisionProxy::distance()']]],
-  ['dt_5f',['dt_',['../classexotica_1_1JointVelocityLimit.html#a3198bb4f0ef05bab2ad2ed067fd2b2c5',1,'exotica::JointVelocityLimit']]],
+  ['dt_5f',['dt_',['../classexotica_1_1JointVelocityLimit.html#a3198bb4f0ef05bab2ad2ed067fd2b2c5',1,'exotica::JointVelocityLimit::dt_()'],['../classexotica_1_1AbstractDynamicsSolver.html#a3b9f08b4b6b0e666e63cdfd3ab012f85',1,'exotica::AbstractDynamicsSolver::dt_()']]],
   ['dt_5finv_5f',['dt_inv_',['../classexotica_1_1JointAccelerationBackwardDifference.html#aa9819571d4ac853cd21171d666c2d8d3',1,'exotica::JointAccelerationBackwardDifference::dt_inv_()'],['../classexotica_1_1JointJerkBackwardDifference.html#a96b13eaa05b5d13ee8ead28ed457bda3',1,'exotica::JointJerkBackwardDifference::dt_inv_()'],['../classexotica_1_1JointVelocityBackwardDifference.html#aca25733a7213e8a38f3fef37ebf98a2b',1,'exotica::JointVelocityBackwardDifference::dt_inv_()']]],
-  ['dx',['dX',['../classSinglePassMeanCovariance.html#a9856aa1d7c6e17107e59cb7832ef7f1b',1,'SinglePassMeanCovariance']]]
+  ['dx',['dX',['../classSinglePassMeanCovariance.html#a9856aa1d7c6e17107e59cb7832ef7f1b',1,'SinglePassMeanCovariance']]],
+  ['dynamics_5fsolver_5f',['dynamics_solver_',['../classexotica_1_1DynamicTimeIndexedShootingProblem.html#a30cc1e919975fc7b1424c364f30ac486',1,'exotica::DynamicTimeIndexedShootingProblem']]],
+  ['dynamics_5fsolvers_5f',['dynamics_solvers_',['../classexotica_1_1Setup.html#a19f0346b9f37ce82c168a05629c30a6a',1,'exotica::Setup']]]
 ];

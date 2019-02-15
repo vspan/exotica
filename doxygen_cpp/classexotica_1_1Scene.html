@@ -133,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a381e8a43fdc64768441c0b8d53d9f917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29bdd6c00e9e9a382579c63f64b94ed6"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Scene.html#a29bdd6c00e9e9a382579c63f64b94ed6">GetModelStateMap</a> ()</td></tr>
 <tr class="separator:a29bdd6c00e9e9a382579c63f64b94ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533256577b5b6b3a4bf6a381288323eb"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::weak_ptr&lt; <a class="el" href="classexotica_1_1KinematicElement.html">KinematicElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Scene.html#a533256577b5b6b3a4bf6a381288323eb">GetTreeMap</a> ()</td></tr>
+<tr class="separator:a533256577b5b6b3a4bf6a381288323eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b33984d2091dcb129b95f44e8837599"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Scene.html#a2b33984d2091dcb129b95f44e8837599">SetModelState</a> (<a class="el" href="namespaceEigen.html#ad6c86a9df4dd2627a995a39eab0f9010">Eigen::VectorXdRefConst</a> x, double t=0, bool update_traj=true)</td></tr>
 <tr class="separator:a2b33984d2091dcb129b95f44e8837599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2e1dd031220ef1fce40d81e3401c31e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Scene.html#af2e1dd031220ef1fce40d81e3401c31e">SetModelState</a> (std::map&lt; std::string, double &gt; x, double t=0, bool update_traj=true)</td></tr>
@@ -220,8 +222,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b1a479d989b9acd18f42e603b1ce67d inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac28824c5d57b0f28fea7a487d211a4b6 inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#ac28824c5d57b0f28fea7a487d211a4b6">GetObjectName</a> ()</td></tr>
 <tr class="separator:ac28824c5d57b0f28fea7a487d211a4b6 inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216aecd7ee95448aa535fd7009869202 inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a216aecd7ee95448aa535fd7009869202">InstatiateObject</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
-<tr class="separator:a216aecd7ee95448aa535fd7009869202 inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081338253532f0a2d0411ec74261abee inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a081338253532f0a2d0411ec74261abee">InstantiateObject</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
+<tr class="separator:a081338253532f0a2d0411ec74261abee inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04ebe4afb65fe1d825070e19a92f7a9f inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a04ebe4afb65fe1d825070e19a92f7a9f">Print</a> (std::string prepend)</td></tr>
 <tr class="separator:a04ebe4afb65fe1d825070e19a92f7a9f inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classexotica_1_1Instantiable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classexotica_1_1Instantiable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classexotica_1_1Instantiable.html">exotica::Instantiable&lt; SceneInitializer &gt;</a></td></tr>
@@ -1172,6 +1174,23 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a533256577b5b6b3a4bf6a381288323eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a533256577b5b6b3a4bf6a381288323eb">&#9670;&nbsp;</a></span>GetTreeMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::weak_ptr&lt; <a class="el" href="classexotica_1_1KinematicElement.html">KinematicElement</a> &gt; &gt; exotica::Scene::GetTreeMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2251,13 +2270,13 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/wxm/dev/exotica_ws/src/exotica/exotica_core/include/exotica_core/<a class="el" href="scene_8h_source.html">scene.h</a></li>
-<li>/home/wxm/dev/exotica_ws/src/exotica/exotica_core/src/<a class="el" href="scene_8cpp.html">scene.cpp</a></li>
+<li>/home/wxm/tmp/exotica/exotica_core/include/exotica_core/<a class="el" href="scene_8h_source.html">scene.h</a></li>
+<li>/home/wxm/tmp/exotica/exotica_core/src/<a class="el" href="scene_8cpp.html">scene.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 21:28:34 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 19:35:55 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

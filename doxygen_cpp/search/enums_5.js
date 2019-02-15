@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sweepmode',['SweepMode',['../classexotica_1_1AICOSolver.html#acf9c283571ec13211293b1c72cf429dc',1,'exotica::AICOSolver::SweepMode()'],['../classexotica_1_1BayesianIKSolver.html#a1e7a57dd0565982b7632bed7110ddb58',1,'exotica::BayesianIKSolver::SweepMode()']]]
+  ['reportingtype',['ReportingType',['../classexotica_1_1Exception.html#a77d23ddc9c67f1518ff33595cfebd074',1,'exotica::Exception']]],
+  ['rotationtype',['RotationType',['../namespaceexotica.html#af9af5a7f278bef923dcaed27ce2ebca0',1,'exotica']]]
 ];

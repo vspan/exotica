@@ -73,7 +73,7 @@ $(function() {
 <div class="contents">
 
 <p>IK position solver The solver constructs and solves a linear program of the following form: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ (SJW)x=y \]" src="form_21.png"/>
+<img class="formulaDsp" alt="\[ (SJW)x=y \]" src="form_24.png"/>
 </p>
 <p> Where S is a diagonal matrix of task scaling factors rho for each task, jacobian is the Jacobian, W is a diagonal matrix of the joint space weights.  
  <a href="classexotica_1_1IKSolver.html#details">More...</a></p>
@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b1a479d989b9acd18f42e603b1ce67d inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac28824c5d57b0f28fea7a487d211a4b6 inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#ac28824c5d57b0f28fea7a487d211a4b6">GetObjectName</a> ()</td></tr>
 <tr class="separator:ac28824c5d57b0f28fea7a487d211a4b6 inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216aecd7ee95448aa535fd7009869202 inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a216aecd7ee95448aa535fd7009869202">InstatiateObject</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
-<tr class="separator:a216aecd7ee95448aa535fd7009869202 inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081338253532f0a2d0411ec74261abee inherit pub_methods_classexotica_1_1Object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Object.html#a081338253532f0a2d0411ec74261abee">InstantiateObject</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
+<tr class="separator:a081338253532f0a2d0411ec74261abee inherit pub_methods_classexotica_1_1Object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classexotica_1_1Instantiable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classexotica_1_1Instantiable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classexotica_1_1Instantiable.html">exotica::Instantiable&lt; IKSolverInitializer &gt;</a></td></tr>
 <tr class="memitem:af439c3f2dd803f4397015a369293e65e inherit pub_methods_classexotica_1_1Instantiable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexotica_1_1Instantiable.html#af439c3f2dd803f4397015a369293e65e">InstantiateInternal</a> (const <a class="el" href="classexotica_1_1Initializer.html">Initializer</a> &amp;init)</td></tr>
 <tr class="separator:af439c3f2dd803f4397015a369293e65e inherit pub_methods_classexotica_1_1Instantiable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +181,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IK position solver The solver constructs and solves a linear program of the following form: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ (SJW)x=y \]" src="form_21.png"/>
+<img class="formulaDsp" alt="\[ (SJW)x=y \]" src="form_24.png"/>
 </p>
 <p> Where S is a diagonal matrix of task scaling factors rho for each task, jacobian is the Jacobian, W is a diagonal matrix of the joint space weights. </p>
 <p>When regularisation term C is used, it gets appended to the Jacobian and distance to the nominal pose is appended to the y vector. For more details see: <a href="https://github.com/ipab-slmc/exotica/pull/465#issuecomment-449021817">https://github.com/ipab-slmc/exotica/pull/465#issuecomment-449021817</a> </p>
@@ -443,13 +443,13 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/wxm/dev/exotica_ws/src/exotica/exotations/solvers/exotica_ik_solver/include/exotica_ik_solver/<a class="el" href="ik__solver_8h_source.html">ik_solver.h</a></li>
-<li>/home/wxm/dev/exotica_ws/src/exotica/exotations/solvers/exotica_ik_solver/src/<a class="el" href="ik__solver_8cpp.html">ik_solver.cpp</a></li>
+<li>/home/wxm/tmp/exotica/exotations/solvers/exotica_ik_solver/include/exotica_ik_solver/<a class="el" href="ik__solver_8h_source.html">ik_solver.h</a></li>
+<li>/home/wxm/tmp/exotica/exotations/solvers/exotica_ik_solver/src/<a class="el" href="ik__solver_8cpp.html">ik_solver.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 8 2019 21:28:34 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 19:35:55 for Exotica by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

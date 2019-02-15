@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['pinocchiodynamicssolver',['PinocchioDynamicsSolver',['../classexotica_1_1PinocchioDynamicsSolver.html',1,'exotica']]],
   ['planningproblem',['PlanningProblem',['../classexotica_1_1PlanningProblem.html',1,'exotica']]],
   ['pointtoline',['PointToLine',['../classexotica_1_1PointToLine.html',1,'exotica']]],
   ['pointtoplane',['PointToPlane',['../classexotica_1_1PointToPlane.html',1,'exotica']]],

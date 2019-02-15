@@ -10,5 +10,5 @@ var searchData=
   ['singlepassmeancovariance',['SinglePassMeanCovariance',['../classSinglePassMeanCovariance.html',1,'']]],
   ['solveexception',['SolveException',['../classexotica_1_1SolveException.html',1,'exotica']]],
   ['spherecollision',['SphereCollision',['../classexotica_1_1SphereCollision.html',1,'exotica']]],
-  ['statetype',['StateType',['../classexotica_1_1OMPLSE3RNStateSpace_1_1StateType.html',1,'exotica::OMPLSE3RNStateSpace::StateType'],['../classexotica_1_1OMPLRNStateSpace_1_1StateType.html',1,'exotica::OMPLRNStateSpace::StateType'],['../classexotica_1_1OMPLSE2RNStateSpace_1_1StateType.html',1,'exotica::OMPLSE2RNStateSpace::StateType'],['../classexotica_1_1OMPLTimeIndexedRNStateSpace_1_1StateType.html',1,'exotica::OMPLTimeIndexedRNStateSpace::StateType']]]
+  ['statetype',['StateType',['../classexotica_1_1OMPLRNStateSpace_1_1StateType.html',1,'exotica::OMPLRNStateSpace::StateType'],['../classexotica_1_1OMPLTimeIndexedRNStateSpace_1_1StateType.html',1,'exotica::OMPLTimeIndexedRNStateSpace::StateType'],['../classexotica_1_1OMPLSE3RNStateSpace_1_1StateType.html',1,'exotica::OMPLSE3RNStateSpace::StateType'],['../classexotica_1_1OMPLSE2RNStateSpace_1_1StateType.html',1,'exotica::OMPLSE2RNStateSpace::StateType']]]
 ];

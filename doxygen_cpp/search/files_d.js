@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['pinocchio_5fdynamics_5fsolver_2ecpp',['pinocchio_dynamics_solver.cpp',['../pinocchio__dynamics__solver_8cpp.html',1,'']]],
+  ['pinocchio_5fdynamics_5fsolver_2eh',['pinocchio_dynamics_solver.h',['../pinocchio__dynamics__solver_8h.html',1,'']]],
   ['planner_2ecpp',['planner.cpp',['../planner_8cpp.html',1,'']]],
   ['planning_5fproblem_2ecpp',['planning_problem.cpp',['../planning__problem_8cpp.html',1,'']]],
   ['planning_5fproblem_2eh',['planning_problem.h',['../planning__problem_8h.html',1,'']]],

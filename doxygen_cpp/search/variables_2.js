@@ -4,6 +4,7 @@ var searchData=
   ['children',['children',['../classexotica_1_1KinematicElement.html#aacccfa9964eb280cc4d534e11d176956',1,'exotica::KinematicElement']]],
   ['closest_5frobot_5flink',['closest_robot_link',['../classexotica_1_1KinematicElement.html#a106c55b24cefd5168f62efe6b8299445',1,'exotica::KinematicElement']]],
   ['collision_5fscene_5f',['collision_scene_',['../classexotica_1_1Scene.html#ae7f3e54a7fad60f960c025830ab76151',1,'exotica::Scene']]],
+  ['collision_5fscenes_5f',['collision_scenes_',['../classexotica_1_1Setup.html#ade6834caa52d4bb2f19d0f4515a5105f',1,'exotica::Setup']]],
   ['collision_5ftree_5fmap_5f',['collision_tree_map_',['../classexotica_1_1KinematicTree.html#adbfbbd6c04750c37e3bdcac5c7a4043f',1,'exotica::KinematicTree']]],
   ['color',['color',['../classexotica_1_1KinematicElement.html#ada156f4c02d381dbbe54fa976ccd20bb',1,'exotica::KinematicElement']]],
   ['com_5flinks_5fmarker_5f',['com_links_marker_',['../classexotica_1_1CenterOfMass.html#a29811cf60e68ce15603ca68a64134040',1,'exotica::CenterOfMass']]],

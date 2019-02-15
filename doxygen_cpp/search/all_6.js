@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['f',['f',['../classexotica_1_1DoubleIntegratorDynamicsSolver.html#ad9c23773f75aeebfdadb9d8bd7e7502f',1,'exotica::DoubleIntegratorDynamicsSolver::f()'],['../classexotica_1_1PinocchioDynamicsSolver.html#a5a77bd785ce12ec7b4dc91bbd47958fe',1,'exotica::PinocchioDynamicsSolver::f()'],['../classexotica_1_1QuadrotorDynamicsSolver.html#a00059c6f747d9ea5dc1ec0833c27b08e',1,'exotica::QuadrotorDynamicsSolver::f()'],['../classexotica_1_1AbstractDynamicsSolver.html#a66f55cd2d4e8d259069f6df3501906b3',1,'exotica::AbstractDynamicsSolver::f()']]],
   ['factory',['Factory',['../classexotica_1_1Factory.html',1,'exotica::Factory&lt; BaseClass &gt;'],['../classexotica_1_1Object.html#a9e1985bccbe54790d70ef45cf33621ad',1,'exotica::Object::Factory()'],['../classexotica_1_1Factory.html#ae7ff5ae05faccd74a50d17af70850faa',1,'exotica::Factory::Factory()']]],
   ['factory_2eh',['factory.h',['../factory_8h.html',1,'']]],
   ['factory_3c_20planningproblem_20_3e',['Factory&lt; PlanningProblem &gt;',['../classexotica_1_1Factory.html',1,'exotica']]],
@@ -30,10 +31,12 @@ var searchData=
   ['frames',['frames',['../structexotica_1_1KinematicsRequest.html#a11838915d3042ae2a845d77eca3e203a',1,'exotica::KinematicsRequest']]],
   ['frames_5f',['frames_',['../classexotica_1_1TaskMap.html#a0320ea809278dc880a17cb20af9e3a3f',1,'exotica::TaskMap']]],
   ['freememory',['freeMemory',['../classexotica_1_1OMPLTimeIndexedRRTConnect.html#ae7bae6b8485745123f7838d93b0b840b',1,'exotica::OMPLTimeIndexedRRTConnect']]],
+  ['fu',['fu',['../classexotica_1_1DoubleIntegratorDynamicsSolver.html#a47c5181f49a0d9eb5c4c5f567e578441',1,'exotica::DoubleIntegratorDynamicsSolver::fu()'],['../classexotica_1_1PinocchioDynamicsSolver.html#a5ae946f2c6b8e085e1a423a1206e821e',1,'exotica::PinocchioDynamicsSolver::fu()'],['../classexotica_1_1QuadrotorDynamicsSolver.html#ae282f7828156558721134e913deca9f0',1,'exotica::QuadrotorDynamicsSolver::fu()'],['../classexotica_1_1AbstractDynamicsSolver.html#ac438ed562d9bc239f45e31eb544b29d4',1,'exotica::AbstractDynamicsSolver::fu()']]],
   ['function_5ftolerance_5f',['function_tolerance_',['../classexotica_1_1AICOSolver.html#ad7c14cc732505a0f35bd5bc1b335878f',1,'exotica::AICOSolver::function_tolerance_()'],['../classexotica_1_1BayesianIKSolver.html#a39f51c11ba0fdf9ed014c424ca870406',1,'exotica::BayesianIKSolver::function_tolerance_()']]],
   ['functionname',['FunctionName',['../classexotica_1_1Exception.html#a77d23ddc9c67f1518ff33595cfebd074a78210cb4f55b5d984682ae4818fab306',1,'exotica::Exception']]],
   ['functiontolerance',['FunctionTolerance',['../namespaceexotica.html#a1d6f0f26eae0a485ee377655fc2aafd2a79e4b3d753fa923b9dab47e785f0cc9e',1,'exotica']]],
   ['functor',['Functor',['../namespaceexotica.html#a41ce9821230067721a4ca7fcd5e86190',1,'exotica']]],
   ['functor_2eh',['functor.h',['../functor_8h.html',1,'']]],
-  ['functorbase',['FunctorBase',['../structexotica_1_1FunctorBase.html',1,'exotica::FunctorBase&lt; Scalar, CompileTimeInputSize, CompileTimeValueSize, CompileTimeJacobianCols &gt;'],['../structexotica_1_1FunctorBase.html#a14d47e9b5d1640a8224af1c90e721715',1,'exotica::FunctorBase::FunctorBase()']]]
+  ['functorbase',['FunctorBase',['../structexotica_1_1FunctorBase.html',1,'exotica::FunctorBase&lt; Scalar, CompileTimeInputSize, CompileTimeValueSize, CompileTimeJacobianCols &gt;'],['../structexotica_1_1FunctorBase.html#a14d47e9b5d1640a8224af1c90e721715',1,'exotica::FunctorBase::FunctorBase()']]],
+  ['fx',['fx',['../classexotica_1_1DoubleIntegratorDynamicsSolver.html#aebb0ea75ee2fb7c6eb38dc11731d554e',1,'exotica::DoubleIntegratorDynamicsSolver::fx()'],['../classexotica_1_1PinocchioDynamicsSolver.html#ab7bd652c732ffb06f384342d62f42e69',1,'exotica::PinocchioDynamicsSolver::fx()'],['../classexotica_1_1QuadrotorDynamicsSolver.html#a7a821f99ab29ed6f1cec26fd71abce5b',1,'exotica::QuadrotorDynamicsSolver::fx()'],['../classexotica_1_1AbstractDynamicsSolver.html#aea84a98df5dd529b0c4ba39205f7a18a',1,'exotica::AbstractDynamicsSolver::fx()']]]
 ];

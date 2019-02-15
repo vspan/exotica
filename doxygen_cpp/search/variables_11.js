@@ -1,6 +1,7 @@
 var searchData=
 [
   ['r',['r',['../classexotica_1_1AICOSolver.html#abccc45f82a58d32a9fb82c7779d008a2',1,'exotica::AICOSolver::r()'],['../classexotica_1_1BayesianIKSolver.html#a3604c4b7b9bc1add80ee48272e3d69e3',1,'exotica::BayesianIKSolver::r()'],['../classexotica_1_1AICOSolver.html#a733553f9d286ee06b9d7a80ee4e618df',1,'exotica::AICOSolver::R()'],['../classexotica_1_1BayesianIKSolver.html#aacd13688ab42eb244d45364961a26f39',1,'exotica::BayesianIKSolver::R()']]],
+  ['r_5f',['R_',['../classexotica_1_1DynamicTimeIndexedShootingProblem.html#a5a79f75587a0f702a9b8a0bf668e83a6',1,'exotica::DynamicTimeIndexedShootingProblem']]],
   ['r_5fold',['r_old',['../classexotica_1_1AICOSolver.html#a1e8f69493668930857baefa55e3b5f12',1,'exotica::AICOSolver::r_old()'],['../classexotica_1_1BayesianIKSolver.html#a1bf56debeede2b5d70a31410b601c282',1,'exotica::BayesianIKSolver::r_old()'],['../classexotica_1_1AICOSolver.html#a2888e3799178091514333909399d77b6',1,'exotica::AICOSolver::R_old()'],['../classexotica_1_1BayesianIKSolver.html#ab475c8a6a544212c7459589bd94742b5',1,'exotica::BayesianIKSolver::R_old()']]],
   ['radius_5f',['radius_',['../classexotica_1_1Trajectory.html#a747ac9b8bbbb5413e0765ce33a7fc111',1,'exotica::Trajectory']]],
   ['radiuses_5f',['radiuses_',['../classexotica_1_1SphereCollision.html#a206c1daf84f3044e57efa426e6c3c179',1,'exotica::SphereCollision']]],
